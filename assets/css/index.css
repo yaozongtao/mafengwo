@@ -17,7 +17,6 @@ a {
   width: 1000px;
   height: 70px;
   line-height: 70px;
-  background-color: pink;
 }
 
 .nav .nav-left {
@@ -51,7 +50,7 @@ a {
 .nav .nav-left > li > a {
   color: #333;
   font-size: 16px;
-  font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
 .nav .nav-left .shop {
@@ -97,6 +96,7 @@ a {
 .nav .nav-left .shop .shop-list li a {
   font-size: 14px;
   color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
 .nav .nav-left .shop .shop-list li a .hot {
@@ -111,11 +111,13 @@ a {
 
 .nav .nav-left .shequ {
   position: relative;
-  font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
 .nav .nav-left .shequ:hover {
   border-bottom: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   border-top: 2px solid #ff9d00;
 }
 
@@ -125,7 +127,7 @@ a {
 
 .nav .nav-left .shequ > .shequ-list {
   position: absolute;
-  top: 70px;
+  top: 68px;
   left: 0;
   display: none;
   width: 300px;
@@ -205,7 +207,7 @@ a {
 .nav .nav-right li a {
   color: #ff9d00;
   font-size: 14px;
-  font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
 .nav .nav-right li .iconfont {
@@ -219,3 +221,21 @@ a {
 }
 
 /*====头部导航end====*/
+/*=====轮播图start=====*/
+.ppt {
+  width: 100%;
+  height: 510px;
+  border: 1px solid red;
+}
+
+.ppt ul > li {
+  position: relative;
+}
+
+.ppt ul > li > .date {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+/*=====轮播图end======*/

@@ -1,89 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-@mixin font{
-    font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+
+@mixin font {
+    font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
+
+
 /*====头部导航start====*/
-.nav{
+
+.nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     width: 1000px;
     height: 70px;
     line-height: 70px;
-    background-color: pink;
-    .nav-left{
+    .nav-left {
         display: flex;
-
-        .logon{
+        .logon {
             margin-top: 20px;
             width: 136px;
             height: 33px;
             background: url(../images/header-small-sprites.png);
         }
-        >li:nth-of-type(1){
+        >li:nth-of-type(1) {
             padding: 0;
         }
-        >li{
+        >li {
             padding: 0px 14px;
-            &:hover{
+            &:hover {
                 color: #ff9d00;
                 border-bottom: 2px solid #ff9d00;
-               > a{
+                > a {
                     color: #ff9d00;
                 }
             }
-            >a{
+            >a {
                 color: #333;
                 font-size: 16px;
                 @include font;
             }
-
         }
-        .shop{
+        .shop {
             position: relative;
-            &:hover{
+            &:hover {
                 border-bottom: 0;
                 border-top: 2px solid #ff9d00;
                 border-left: 1px solid #ddd;
                 border-right: 1px solid #ddd;
-                .shop-list{
+                .shop-list {
                     display: block;
                 }
             }
-            .shop-list{
+            .shop-list {
                 position: absolute;
                 top: 68px;
                 left: 0;
                 display: none;
                 padding: 0;
                 background: #eee;
-                li{
+                li {
                     padding: 0px 10px 0px;
                     width: 124px;
                     height: 40px;
                     line-height: 40px;
-                    &:hover{
+                    &:hover {
                         border-bottom: 0;
                         background: #ddd;
-                        a{
+                        a {
                             color: #444;
                         }
                     }
-                    a{
+                    a {
                         font-size: 14px;
                         color: #333;
-                        .hot{
+                        @include font;
+                        .hot {
                             color: red;
                             font-size: 30px;
                         }
-                        .new{
+                        .new {
                             color: skyblue;
                             font-size: 35px;
                         }
@@ -91,62 +94,61 @@ a{
                 }
             }
         }
-
-        .shequ{
+        .shequ {
             position: relative;
             @include font;
-            &:hover{
+            &:hover {
                 border-bottom: 0;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
                 border-top: 2px solid #ff9d00;
-                >.shequ-list{
+                >.shequ-list {
                     display: block;
                 }
             }
-            >.shequ-list{
+            >.shequ-list {
                 position: absolute;
-                top: 70px;
+                top: 68px;
                 left: 0;
                 display: none;
                 width: 300px;
                 height: 300px;
                 background-color: #eee;
-
-                >.list-left{
+                >.list-left {
                     float: left;
-                    >li{
+                    >li {
                         margin-left: 15px;
                         height: 75px;
-                        >.hot{
-                            color:red;
+                        >.hot {
+                            color: red;
                             font-size: 30px;
                         }
-                        >.new{
+                        >.new {
                             color: skyblue;
                             font-size: 30px;
                         }
-                        >a{
+                        >a {
                             font-size: 16px;
                             color: #444;
-                            &:hover{
+                            &:hover {
                                 color: #ff9d00;
                             }
                         }
                     }
                 }
-                >.list-right{
+                >.list-right {
                     float: right;
                     margin-top: 20px;
                     margin-right: 50px;
-                    >li{
+                    >li {
                         height: 32px;
                         line-height: 32px;
                         font-size: 14px;
-                        >a{
+                        >a {
                             color: #444;
-
                         }
-                        &:hover{
-                            a{
+                        &:hover {
+                            a {
                                 color: #ff9d00;
                             }
                         }
@@ -155,37 +157,56 @@ a{
             }
         }
     }
-    .nav-right{
+    .nav-right {
         display: flex;
-        li:nth-of-type(5){
+        li:nth-of-type(5) {
             padding: 0;
-            a{
+            a {
                 padding-left: 10px;
                 border-left: 1px solid #c9c9c9;
             }
         }
-        li{
+        li {
             padding: 0px 10px;
-            .line:hover{
+            .line:hover {
                 text-decoration: underline;
             }
-            a{
+            a {
                 color: #ff9d00;
                 font-size: 14px;
                 @include font;
-
-
             }
-            .iconfont{
+            .iconfont {
                 font-size: 25px;
-                &:hover{
+                &:hover {
                     color: #fff;
                     background-color: #ff9d00;
                     border-radius: 50%;
-
                 }
             }
         }
     }
 }
+
+
 /*====头部导航end====*/
+
+
+/*=====轮播图start=====*/
+
+.ppt {
+    width: 100%;
+    height: 510px;
+    border: 1px solid red;
+    ul>li {
+        position: relative;
+        >.date {
+            position: absolute;
+            top: 50px;
+            left: 300px;
+        }
+    }
+}
+
+
+/*=====轮播图end======*/
