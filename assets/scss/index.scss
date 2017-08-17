@@ -1,1 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@mixin font{
+    font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+}
+/*====头部导航start====*/
+.nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 70px;
+    line-height: 70px;
+    background-color: pink;
+    .nav-left{
+        display: flex;
 
+        .logon{
+            margin-top: 20px;
+            width: 136px;
+            height: 33px;
+            background: url(../images/header-small-sprites.png);
+        }
+        li:nth-of-type(1){
+            padding: 0;
+        }
+        li{
+            padding: 0px 14px;
+            &:hover{
+                color: #ff9d00;
+                border-bottom: 2px solid #ff9d00;
+                a{
+                    color: #ff9d00;
+                }
+            }
+            a{
+                color: #333;
+                font-size: 16px;
+                @include font;
+            }
+
+        }
+        .shop{
+            position: relative;
+            &:hover{
+                border-bottom: 0;
+                border-top: 2px solid #ff9d00;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                .shop-list{
+                    display: block;
+                }
+            }
+            .shop-list{
+                position: absolute;
+                top: 68px;
+                left: 0;
+                display: none;
+                padding: 0;
+                background: #eee;
+                li{
+                    padding: 0px 10px 0px;
+                    width: 124px;
+                    height: 40px;
+                    line-height: 40px;
+                    &:hover{
+                        border-bottom: 0;
+                        background: #ddd;
+                        a{
+                            color: #333;
+                        }
+                    }
+                    a{
+                        font-size: 14px;
+                        color: #333;
+                        .hot{
+                            color: red;
+                            font-size: 30px;
+                        }
+                        .new{
+                            color: skyblue;
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-right{
+        display: flex;
+        li:nth-of-type(5){
+            padding: 0;
+            a{
+                padding-left: 10px;
+                border-left: 1px solid #c9c9c9;
+            }
+        }
+        li{
+            padding: 0px 10px;
+            .line:hover{
+                text-decoration: underline;
+            }
+            a{
+                color: #ff9d00;
+                font-size: 14px;
+                @include font;
+
+
+            }
+            .iconfont{
+                font-size: 25px;
+                &:hover{
+                    color: #fff;
+                    background-color: #ff9d00;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+    }
+}
+/*====头部导航end====*/

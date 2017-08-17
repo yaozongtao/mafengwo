@@ -4,24 +4,26 @@ var gulp = require('gulp'),
     scss = require('gulp-sass');
 
 // 静态服务器 + 监听 scss/html 文件
-gulp.task('server', function() {
-    // 初始化服务器，进行相关配置
+gulp.task('serve', ['scss'], function() {
+
     browserSync.init({
-        // 设置服务器所有文件的起始路径
         server: "./"
     });
 
-    // 在['scss']这里的含义：先执行完成scss编译任务，在执行浏览器刷新
-    gulp.watch("assets/scss/*.scss", ['scss']).on('change', reload);
-    gulp.watch("./*.html").on('change', reload);
+    gulp.watch("assets/scss/*.scss", ['scss']);
+    gulp.watch("app/*.html").on('change', reload);
 });
 
-// 任务：编译sass文件
+// scss编译后的css将注入到浏览器里实现更新
 gulp.task('scss', function() {
-    gulp.src('assets/scss/*.scss')
-        .pipe(scss())
-        .pipe(gulp.dest('assets/css'));
-})
+    return gulp.src("assets/scss/*.scss")
+        .pipe(scss({
+            outputStyle: 'expanded'
+        }).on('error', scss.logError))
+        .pipe(gulp.dest("assets/css"))
+        .pipe(reload({
+            stream: true
+        }));
+});
 
-// 默认任务
-gulp.task('default', ['server']);
+gulp.task('default', ['serve']);
