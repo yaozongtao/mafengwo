@@ -31,24 +31,24 @@ a {
   background: url(../images/header-small-sprites.png);
 }
 
-.nav .nav-left li:nth-of-type(1) {
+.nav .nav-left > li:nth-of-type(1) {
   padding: 0;
 }
 
-.nav .nav-left li {
+.nav .nav-left > li {
   padding: 0px 14px;
 }
 
-.nav .nav-left li:hover {
+.nav .nav-left > li:hover {
   color: #ff9d00;
   border-bottom: 2px solid #ff9d00;
 }
 
-.nav .nav-left li:hover a {
+.nav .nav-left > li:hover > a {
   color: #ff9d00;
 }
 
-.nav .nav-left li a {
+.nav .nav-left > li > a {
   color: #333;
   font-size: 16px;
   font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
@@ -91,7 +91,7 @@ a {
 }
 
 .nav .nav-left .shop .shop-list li:hover a {
-  color: #333;
+  color: #444;
 }
 
 .nav .nav-left .shop .shop-list li a {
@@ -107,6 +107,78 @@ a {
 .nav .nav-left .shop .shop-list li a .new {
   color: skyblue;
   font-size: 35px;
+}
+
+.nav .nav-left .shequ {
+  position: relative;
+  font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+}
+
+.nav .nav-left .shequ:hover {
+  border-bottom: 0;
+  border-top: 2px solid #ff9d00;
+}
+
+.nav .nav-left .shequ:hover > .shequ-list {
+  display: block;
+}
+
+.nav .nav-left .shequ > .shequ-list {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-left {
+  float: left;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-left > li {
+  margin-left: 15px;
+  height: 75px;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-left > li > .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-left > li > .new {
+  color: skyblue;
+  font-size: 30px;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-left > li > a {
+  font-size: 16px;
+  color: #444;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-left > li > a:hover {
+  color: #ff9d00;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-right {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-right > li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-right > li > a {
+  color: #444;
+}
+
+.nav .nav-left .shequ > .shequ-list > .list-right > li:hover a {
+  color: #ff9d00;
 }
 
 .nav .nav-right {
