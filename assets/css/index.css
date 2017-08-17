@@ -223,19 +223,60 @@ a {
 /*====头部导航end====*/
 /*=====轮播图start=====*/
 .ppt {
+  position: relative;
   width: 100%;
   height: 510px;
   border: 1px solid red;
 }
 
-.ppt ul > li {
-  position: relative;
+.ppt .ppt-main {
+  /*======PPT文字部分end====*/
 }
 
-.ppt ul > li > .date {
+.ppt .ppt-main li:nth-of-type(1) {
+  display: block;
+}
+
+.ppt .ppt-main li {
+  position: relative;
+  display: none;
+  /*======PPT文字部分start====*/
+}
+
+.ppt .ppt-main li .date {
   position: absolute;
-  top: 50px;
-  left: 300px;
+  top: 30px;
+  left: 360px;
+  color: #fff;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.ppt .ppt-main li .date > p {
+  font-size: 24px;
+}
+
+.ppt .ppt-main li .date > p > span {
+  font-size: 38px;
+}
+
+.ppt .ppt-main li .date > h3 {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.ppt .pptsider-bar {
+  position: absolute;
+  top: 60px;
+  left: 91%;
+}
+
+.ppt .pptsider-bar .more {
+  margin-top: 15px;
+  width: 110px;
+  height: 35px;
+  background-image: url(../images/index-sprites9.png);
+  background-position: -60px -50px !important;
 }
 
 /*=====轮播图end======*/

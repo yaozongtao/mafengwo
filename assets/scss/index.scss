@@ -195,15 +195,49 @@ a {
 /*=====轮播图start=====*/
 
 .ppt {
+    position: relative;
     width: 100%;
     height: 510px;
     border: 1px solid red;
-    ul>li {
-        position: relative;
-        >.date {
-            position: absolute;
-            top: 50px;
-            left: 300px;
+    .ppt-main {
+        li:nth-of-type(1) {
+            display: block;
+        }
+        li {
+            position: relative;
+            display: none;
+            /*======PPT文字部分start====*/
+            .date {
+                position: absolute;
+                top: 30px;
+                left: 360px;
+                color: #fff;
+                @include font;
+                text-shadow: 0 1px 3px rgba(0, 0, 0, .9);
+                >p {
+                    font-size: 24px;
+                    >span {
+                        font-size: 38px;
+                    }
+                }
+                >h3 {
+                    font-weight: normal;
+                    font-size: 26px;
+                }
+            }
+        }
+        /*======PPT文字部分end====*/
+    }
+    .pptsider-bar {
+        position: absolute;
+        top: 60px;
+        left: 91%;
+        .more {
+            margin-top: 15px;
+            width: 110px;
+            height: 35px;
+            background-image: url(../images/index-sprites9.png);
+            background-position: -60px -50px!important;
         }
     }
 }
