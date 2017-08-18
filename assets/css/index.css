@@ -25,9 +25,10 @@ a {
 
 .nav .nav-left .logon {
   margin-top: 20px;
+  margin-right: 24px;
   width: 136px;
-  height: 33px;
-  background: url(../images/header-small-sprites.png);
+  height: 39px;
+  background: url(../images/header-sprites13.png) 0 0;
 }
 
 .nav .nav-left > li:nth-of-type(1) {
@@ -225,8 +226,14 @@ a {
 .ppt {
   position: relative;
   width: 100%;
-  height: 510px;
+  height: 576px;
   border: 1px solid red;
+  /*=====ppt主图部分start====*/
+  /*=======ppt主图部分end=====*/
+  /*=======ppt侧边缩略图部分start======*/
+  /*=======ppt侧边缩略图部分edn=======*/
+  /*======ppt中间搜索框部分start=====*/
+  /*======ppt中间搜索框部分end=====*/
 }
 
 .ppt .ppt-main {
@@ -241,6 +248,24 @@ a {
   position: relative;
   display: none;
   /*======PPT文字部分start====*/
+}
+
+.ppt .ppt-main li .from {
+  position: absolute;
+  left: 31%;
+  bottom: 24px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.ppt .ppt-main li .from > a {
+  color: #ff9d00;
+}
+
+.ppt .ppt-main li .from > a:hover {
+  text-decoration: underline;
 }
 
 .ppt .ppt-main li .date {
@@ -279,4 +304,110 @@ a {
   background-position: -60px -50px !important;
 }
 
+.ppt .search-group {
+  position: absolute;
+  top: 424px;
+  left: 31%;
+  padding: 15px;
+  width: 601px;
+  height: 80px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ppt .search-group .search-top {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.ppt .search-group .search-top li {
+  margin-right: 30px;
+  overflow: hidden;
+  float: left;
+}
+
+.ppt .search-group .search-top li a {
+  position: relative;
+  padding-left: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.ppt .search-group .search-top li a i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 5px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: red;
+  background-image: url(../images/header-sprites13.png);
+  background-position: -60px -109px;
+}
+
+.ppt .search-group .search {
+  display: flex;
+  justify-content: space-between;
+  width: 604px;
+  height: 48px;
+}
+
+.ppt .search-group .search input {
+  padding: 0px 20px;
+  width: 506px;
+  height: 48px;
+  border-radius: 4px;
+  border: 0;
+  color: #666;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.ppt .search-group .search .search-button {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 5px;
+  background-color: #ff9d00;
+}
+
+.ppt .search-group .search .search-button:hover {
+  background-color: #ff8a00;
+}
+
+.ppt .search-group .search .search-button > i {
+  margin-top: 12px;
+  margin-left: 12px;
+  display: inline-block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/header-sprites13.png);
+  background-position: 0 -110px;
+}
+
 /*=====轮播图end======*/
+/*======section开始=======*/
+.section {
+  margin: 0 auto;
+  width: 1000px;
+  height: 900px;
+  background-color: pink;
+}
+
+.section .section-left {
+  width: 260px;
+  height: 800px;
+  background-color: yellow;
+}
+
+.section .section-right {
+  width: 700px;
+  height: 800px;
+  background-color: blue;
+}
+
+/*======section结束=======*/
