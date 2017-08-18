@@ -393,8 +393,10 @@ a {
 /*======section开始=======*/
 .section {
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   width: 1000px;
-  height: 900px;
+  height: 1400px;
   background-color: pink;
 }
 
@@ -402,6 +404,253 @@ a {
   width: 260px;
   height: 800px;
   background-color: yellow;
+  /*=====广告位start=====*/
+  /*=====广告位end=====*/
+}
+
+.section .section-left .section-ad {
+  margin-top: 20px;
+}
+
+.section .section-left .section-head {
+  margin: 25px 0px 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 0;
+}
+
+.section .section-left .section-head > h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .section-head > h2 > a {
+  color: #333;
+}
+
+.section .section-left .section-head > span {
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-size: 12px;
+}
+
+.section .section-left .section-head > span > a {
+  color: #999;
+}
+
+.section .section-left .section-head > span > a:hover {
+  text-decoration: underline;
+}
+
+.section .section-left .section-ppt {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 240px;
+  background: #fff;
+}
+
+.section .section-left .section-ppt .small-ppt {
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+}
+
+.section .section-left .section-ppt .small-ppt > li {
+  float: left;
+  width: 260px;
+  height: 240px;
+}
+
+.section .section-left .section-ppt .small-ppt > li > h3 {
+  margin-top: 10px;
+  height: 26px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .section-ppt .small-ppt > li > p {
+  height: 60px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .section-ppt .section-btn {
+  position: absolute;
+  top: 125px;
+  right: 7px;
+}
+
+.section .section-left .section-ppt .section-btn li {
+  float: left;
+  margin-right: 3px;
+  width: 15px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.section .section-left .section-ppt .section-btn li:hover {
+  background-color: #ff9d00;
+}
+
+.section .section-left .city .qingdao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section .section-left .city .qingdao > dl {
+  padding-top: 12px;
+  width: 130px;
+  height: 75px;
+}
+
+.section .section-left .city .qingdao > dl > dt a h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: normal;
+  font-size: 22px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .city .qingdao > dl > dt a h3:hover {
+  text-decoration: underline;
+}
+
+.section .section-left .city .qingdao > dl dd {
+  color: #666;
+  font-size: 12px;
+}
+
+.section .section-left .city .comment {
+  margin-top: 10px;
+}
+
+.section .section-left .city .comment li {
+  overflow: hidden;
+  width: 260px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowarp;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .city .comment li a {
+  color: #ff8a00;
+}
+
+.section .section-left .city .comment li a:hover {
+  text-decoration: underline;
+}
+
+.section .section-left .section-head span a {
+  color: #ff8a00;
+}
+
+.section .section-left .activity {
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: 10px;
+  scrollbar-3d-light-color: #fff;
+  width: 260px;
+  height: 390px;
+}
+
+.section .section-left .activity img {
+  margin-right: 8px;
+}
+
+.section .section-left .activity ul li {
+  padding: 5px;
+  width: 250px;
+  height: 40px;
+}
+
+.section .section-left .activity ul li > a {
+  display: flex;
+  font-size: 0;
+  line-height: 20px;
+}
+
+.section .section-left .activity ul li > a dl dt {
+  font-size: 14px;
+  color: #ff9d00;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .activity ul li > a dl dd {
+  font-size: 12px;
+  color: #666;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .section-head span a {
+  color: #666;
+}
+
+.section .section-left .join-us ul {
+  width: 260px;
+  height: 90px;
+}
+
+.section .section-left .join-us ul li {
+  width: 260px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.section .section-left .join-us ul li:hover a {
+  color: #ff9d00;
+}
+
+.section .section-left .join-us ul li a {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+.section .section-left .join-us ul li a p {
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .join-us ul li a span {
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .process ul {
+  width: 260px;
+  height: 180px;
+}
+
+.section .section-left .process ul li {
+  width: 260px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-left .process ul li a {
+  color: #666;
+}
+
+.section .section-left .process ul li a:hover {
+  text-decoration: underline;
 }
 
 .section .section-right {

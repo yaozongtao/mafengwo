@@ -347,13 +347,240 @@ a {
 
 .section {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     width: 1000px;
-    height: 900px;
+    height: 1400px;
     background-color: pink;
     .section-left {
         width: 260px;
         height: 800px;
         background-color: yellow;
+        /*=====广告位start=====*/
+        .section-ad {
+            margin-top: 20px;
+        }
+        /*=====广告位end=====*/
+        .section-head {
+            margin: 25px 0px 15px 0px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            font-size: 0;
+            >h2 {
+                font-size: 18px;
+                font-weight: normal;
+                @include font;
+                >a {
+                    color: #333;
+                }
+            }
+            >span {
+                @include font;
+                font-size: 12px;
+                >a {
+                    color: #999;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .section-ppt {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 240px;
+            background: #fff;
+            .small-ppt {
+                font-size: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1300px;
+                >li {
+                    float: left;
+                    width: 260px;
+                    height: 240px;
+                    >h3 {
+                        margin-top: 10px;
+                        height: 26px;
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: #333;
+                        @include font;
+                    }
+                    >p {
+                        height: 60px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        color: #333;
+                        @include font;
+                    }
+                }
+            }
+            .section-btn {
+                position: absolute;
+                top: 125px;
+                right: 7px;
+                li {
+                    float: left;
+                    margin-right: 3px;
+                    width: 15px;
+                    height: 8px;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    &:hover {
+                        background-color: #ff9d00;
+                    }
+                }
+            }
+        }
+        .city {
+            .qingdao {
+                display: flex;
+                justify-content: space-between;
+                >dl {
+                    padding-top: 12px;
+                    width: 130px;
+                    height: 75px;
+                    >dt {
+                        a {
+                            h3 {
+                                margin-bottom: 15px;
+                                color: #333;
+                                font-weight: normal;
+                                font-size: 22px;
+                                @include font;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    dd {
+                        color: #666;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .comment {
+                margin-top: 10px;
+                li {
+                    overflow: hidden;
+                    width: 260px;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: 14px;
+                    color: #333;
+                    text-overflow: ellipsis;
+                    white-space: nowarp;
+                    @include font;
+                    a {
+                        color: #ff8a00;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .section-head {
+            span {
+                a {
+                    color: #ff8a00;
+                }
+            }
+        }
+        .activity {
+            overflow: scroll;
+            overflow-x: hidden;
+            scrollbar-width: 10px;
+            scrollbar-3d-light-color: #fff;
+            width: 260px;
+            height: 390px;
+            img {
+                margin-right: 8px;
+            }
+            ul li {
+                padding: 5px;
+                width: 250px;
+                height: 40px;
+                >a {
+                    display: flex;
+                    font-size: 0;
+                    line-height: 20px;
+                    dl dt {
+                        font-size: 14px;
+                        color: #ff9d00;
+                        @include font;
+                    }
+                    dl dd {
+                        font-size: 12px;
+                        color: #666;
+                        @include font;
+                    }
+                }
+            }
+        }
+        .section-head {
+            span {
+                a {
+                    color: #666;
+                }
+            }
+        }
+        .join-us {
+            ul {
+                width: 260px;
+                height: 90px;
+                li {
+                    width: 260px;
+                    height: 30px;
+                    line-height: 30px;
+                    &:hover {
+                        a {
+                            color: #ff9d00;
+                        }
+                    }
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #666;
+                        p {
+                            font-size: 14px;
+                            @include font;
+                        }
+                        span {
+                            font-size: 12px;
+                            @include font;
+                        }
+                    }
+                }
+            }
+        }
+        .process {
+            ul {
+                width: 260px;
+                height: 180px;
+                li {
+                    width: 260px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                    color: #666;
+                    @include font;
+                    a {
+                        color: #666;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
     }
     .section-right {
         width: 700px;
