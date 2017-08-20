@@ -1,0 +1,253 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=========头部导航start=======*/
+.head {
+  width: 100%;
+  background-color: pink;
+}
+
+.head .nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  height: 70px;
+  line-height: 70px;
+  /*========搜索框start======*/
+  /*========搜索框end======*/
+}
+
+.head .nav .nav-left {
+  display: flex;
+}
+
+.head .nav .nav-left .logon {
+  margin-top: 20px;
+  margin-right: 24px;
+  width: 136px;
+  height: 39px;
+  background: url(../images/header-sprites13.png) 0 0;
+}
+
+.head .nav .nav-left > li:nth-of-type(1) {
+  padding: 0;
+}
+
+.head .nav .nav-left > li {
+  padding: 0px 14px;
+}
+
+.head .nav .nav-left > li:hover {
+  color: #ff9d00;
+  border-bottom: 2px solid #ff9d00;
+}
+
+.head .nav .nav-left > li:hover > a {
+  color: #ff9d00;
+}
+
+.head .nav .nav-left > li > a {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.head .nav .nav-left .shop {
+  position: relative;
+}
+
+.head .nav .nav-left .shop:hover {
+  border-bottom: 0;
+  border-top: 2px solid #ff9d00;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.head .nav .nav-left .shop:hover .shop-list {
+  display: block;
+}
+
+.head .nav .nav-left .shop .shop-list {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  padding: 0;
+  background: #eee;
+}
+
+.head .nav .nav-left .shop .shop-list li {
+  padding: 0px 10px 0px;
+  width: 124px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.head .nav .nav-left .shop .shop-list li:hover {
+  border-bottom: 0;
+  background: #ddd;
+}
+
+.head .nav .nav-left .shop .shop-list li:hover a {
+  color: #444;
+}
+
+.head .nav .nav-left .shop .shop-list li a {
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.head .nav .nav-left .shop .shop-list li a .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.head .nav .nav-left .shop .shop-list li a .new {
+  color: skyblue;
+  font-size: 35px;
+}
+
+.head .nav .nav-left .shequ {
+  position: relative;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.head .nav .nav-left .shequ:hover {
+  border-bottom: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid #ff9d00;
+}
+
+.head .nav .nav-left .shequ:hover > .shequ-list {
+  display: block;
+}
+
+.head .nav .nav-left .shequ > .shequ-list {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-left {
+  float: left;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-left > li {
+  margin-left: 15px;
+  height: 75px;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-left > li > .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-left > li > .new {
+  color: skyblue;
+  font-size: 30px;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-left > li > a {
+  font-size: 16px;
+  color: #444;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-left > li > a:hover {
+  color: #ff9d00;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-right {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-right > li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-right > li > a {
+  color: #444;
+}
+
+.head .nav .nav-left .shequ > .shequ-list > .list-right > li:hover a {
+  color: #ff9d00;
+}
+
+.head .nav .inpt {
+  display: inline-block;
+  padding: 0 10px;
+  width: 107px;
+  height: 33px;
+  line-height: 70px;
+  border-radius: 4px;
+  margin-top: 18.5px;
+  border: 1px solid #efefef;
+}
+
+.head .nav .inpt input {
+  margin-right: 10px;
+  padding: 0 10px;
+  width: 107px;
+  height: 33px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.head .nav .nav-right {
+  display: flex;
+}
+
+.head .nav .nav-right li:nth-of-type(5) {
+  padding: 0;
+}
+
+.head .nav .nav-right li:nth-of-type(5) a {
+  padding-left: 10px;
+  border-left: 1px solid #c9c9c9;
+}
+
+.head .nav .nav-right li {
+  padding: 0px 10px;
+}
+
+.head .nav .nav-right li .line:hover {
+  text-decoration: underline;
+}
+
+.head .nav .nav-right li a {
+  color: #ff9d00;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.head .nav .nav-right li .iconfont {
+  font-size: 25px;
+}
+
+.head .nav .nav-right li .iconfont:hover {
+  color: #fff;
+  background-color: #ff9d00;
+  border-radius: 50%;
+}
+
+/*=========头部导航end=========*/
