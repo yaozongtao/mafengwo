@@ -399,14 +399,12 @@ a {
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  height: 1400px;
-  background-color: pink;
+  height: 2600px;
 }
 
 .section .section-left {
   width: 260px;
   height: 800px;
-  background-color: yellow;
   /*=====广告位start=====*/
   /*=====广告位end=====*/
 }
@@ -664,7 +662,8 @@ a {
 .section .section-right {
   width: 700px;
   height: 800px;
-  background-color: #ddd;
+  /*=====页脚start====*/
+  /*======页脚end=====*/
 }
 
 .section .section-right .sidebar-ad {
@@ -695,7 +694,6 @@ a {
 .section .section-right .hot-sale li {
   width: 220px;
   height: 217px;
-  background-color: pink;
 }
 
 .section .section-right .hot-sale li a div {
@@ -826,7 +824,6 @@ a {
   width: 700px;
   height: 35px;
   line-height: 35px;
-  background-color: yellow;
   overflow: hidden;
 }
 
@@ -938,10 +935,389 @@ a {
   background: url(../images/index-sprites9.png);
 }
 
-.section .section-right .check-content {
+.section .section-right .check-items {
+  display: flex;
+  justify-content: space-between;
   padding: 15px 0px;
   width: 700px;
   height: 150px;
 }
 
+.section .section-right .check-items:hover {
+  background: #f8f8f8;
+}
+
+.section .section-right .check-items:hover .describe dl dt a {
+  color: #ff9d00;
+}
+
+.section .section-right .check-items .describe {
+  width: 460px;
+  height: 150px;
+}
+
+.section .section-right .check-items .describe dl dt {
+  margin-bottom: 15px;
+}
+
+.section .section-right .check-items .describe dl dt a {
+  line-height: 26px;
+  font-size: 18px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-right .check-items .describe dl dd a {
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-right .check-items .describe .des-from {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+  height: 33px;
+  line-height: 33px;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left {
+  display: flex;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #666;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li i {
+  float: left;
+  margin: 8px 5px 0px 0px;
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  background: url(../images/index-sprites9.png) 0 -50px;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li a:hover {
+  color: #ff9d00;
+  text-decoration: underline;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li span img {
+  float: left;
+  margin: 6px 5px 0 0;
+  border-radius: 50%;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li .see {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background: url(../images/index-sprites9.png) -30px -50px;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li:nth-of-type(2) {
+  margin-right: 10px;
+  color: #ff9d00;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li:nth-of-type(2):hover {
+  text-decoration: underline;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-left li:nth-of-type(3) {
+  font-size: 14px;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-right li {
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  color: #ff9d00;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  vertical-align: middle;
+}
+
+.section .section-right .check-items .describe .des-from .des-f-right li i {
+  margin-left: 10px;
+  display: inline-block;
+  width: 38px;
+  height: 33px;
+  background: url(../images/index-sprites9.png) -60px 0;
+  vertical-align: middle;
+}
+
+.section .section-right .page {
+  padding: 20px 0px 20px 0px;
+  width: 700px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.section .section-right .page .inner {
+  float: right;
+}
+
+.section .section-right .page .inner span {
+  margin-right: 12px;
+  font-size: 12px;
+  color: #999;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .section-right .page .inner .page-list {
+  float: right;
+  display: flex;
+  margin-right: 5px;
+}
+
+.section .section-right .page .inner .page-list li:nth-of-type(1),
+.section .section-right .page .inner .page-list li:nth-of-type(11) {
+  padding: 0 5px;
+  width: 54px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.section .section-right .page .inner .page-list li {
+  margin-right: 5px;
+  width: 20px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.section .section-right .page .inner .page-list li a {
+  color: #999;
+}
+
+.section .section-right .page .inner .page-list .number:hover {
+  background-color: #efefef;
+}
+
+.section .section-right .page .inner .page-list .page-active {
+  background-color: #ff9d00;
+}
+
+.section .section-right .page .inner .page-list .page-active a {
+  color: #fff;
+}
+
 /*======section结束=======*/
+/*===========页面底部start======*/
+.footer {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 500px;
+  background-color: #3c3c3c;
+}
+
+.footer .middle {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+}
+
+.footer .middle .ft-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8px 0px;
+  width: 984px;
+  height: 180px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.footer .middle .ft-info dt {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer .middle .ft-info .plate dd span,
+.footer .middle .ft-info .plate dd a {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info .about-us a {
+  color: #c2c2c2;
+}
+
+.footer .middle .ft-info .about-us a:hover {
+  color: #fff;
+}
+
+.footer .middle .ft-info dd:nth-of-type(7) a {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info dd:nth-of-type(7) a:hover {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info .servce dt {
+  text-align: center;
+}
+
+.footer .middle .ft-info .servce dd {
+  display: flex;
+}
+
+.footer .middle .ft-info .servce dd a {
+  color: #c2c2c2;
+}
+
+.footer .middle .ft-info .servce dd .ser-left li:nth-of-type(6) a {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info .twohouse {
+  display: flex;
+}
+
+.footer .middle .ft-info .twohouse dt {
+  margin-right: 40px;
+}
+
+.footer .middle .ft-info .twohouse dt p {
+  text-align: center;
+}
+
+.footer .middle .ft-info .twohouse dd p {
+  text-align: center;
+}
+
+.footer .middle .ft-us {
+  margin-top: 22px;
+  padding: 0px 8px 18px;
+  width: 984px;
+  height: 58px;
+}
+
+.footer .middle .ft-us dt {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.footer .middle .ft-us dd {
+  height: 28px;
+  text-align: center;
+}
+
+.footer .middle .ft-us dd i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.footer .middle .ft-us dd .xinlang {
+  background: url(../images/mfw-footer-sprite5.png) 0 0;
+}
+
+.footer .middle .ft-us dd .weibo {
+  background: url(../images/mfw-footer-sprite5.png) -30px 0;
+}
+
+.footer .middle .ft-us dd .kongjian {
+  background: url(../images/mfw-footer-sprite5.png) -60px 0;
+}
+
+.footer .middle .link {
+  padding: 17px 8px;
+  width: 984px;
+  height: 65px;
+  border-top: 1px solid #575a5b;
+  border-bottom: 1px solid #575a5b;
+}
+
+.footer .middle .link a {
+  display: inline-block;
+  line-height: 16px;
+  font-size: 12px;
+  color: #c2c2c2;
+}
+
+.footer .middle .link a:hover {
+  color: #fff;
+}
+
+.footer .middle .ft-ft {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 1000px;
+  height: 43px;
+}
+
+.footer .middle .ft-ft dl {
+  display: flex;
+}
+
+.footer .middle .ft-ft dl dt {
+  margin-right: 20px;
+  display: inline-block;
+  width: 136px;
+  height: 39px;
+  background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+}
+
+.footer .middle .ft-ft dl dd {
+  font-size: 12px;
+  color: #c2c2c2;
+  line-height: 22px;
+}
+
+.footer .middle .ft-ft dl dd p a {
+  color: #c2c2c2;
+}
+
+.footer .middle .ft-ft dl dd p a:hover {
+  color: #fff;
+}
+
+.footer .middle .ft-ft dl dd p .map {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-ft dl dd p .map:hover {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-ft ul {
+  display: flex;
+}
+
+.footer .middle .ft-ft ul li {
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.footer .middle .ft-ft ul li:nth-of-type(3) {
+  margin-right: 10px;
+}
+
+.footer .middle .ft-ft ul .chengx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+}
+
+.footer .middle .ft-ft ul .kex {
+  background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+}
+
+.footer .middle .ft-ft ul .wangx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -150px;
+}
+
+/*===========页面底部end========*/
