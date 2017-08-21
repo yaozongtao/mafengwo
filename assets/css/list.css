@@ -9,74 +9,99 @@ a {
   text-decoration: none;
 }
 
-/*=========头部导航start=======*/
-.head {
-  width: 100%;
-  background-color: pink;
+.middle {
+  margin: 0 auto;
+  width: 1000px;
 }
 
-.head .nav {
+/*======头部开始=======*/
+.header {
+  position: relative;
+  width: 100%;
+  height: 685px;
+  background: url(../images/wKgBZ1lX2b-AfxeiAAsDoBjjHqY14.jpg) center center;
+}
+
+.header .head {
+  width: 100%;
+  /*=========头部导航start=======*/
+  /*=========头部导航end=========*/
+}
+
+.header .head:hover {
+  background-color: #fff;
+}
+
+.header .head:hover .nav .nav-left .logon {
+  background: url(../images/header-sprites13.png);
+}
+
+.header .head:hover .nav .nav-left li a {
+  color: #333;
+}
+
+.header .head .nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  width: 1000px;
+  width: 1010px;
   height: 70px;
   line-height: 70px;
   /*========搜索框start======*/
   /*========搜索框end======*/
 }
 
-.head .nav .nav-left {
+.header .head .nav .nav-left {
   display: flex;
 }
 
-.head .nav .nav-left .logon {
+.header .head .nav .nav-left .logon {
   margin-top: 20px;
   margin-right: 24px;
   width: 136px;
   height: 39px;
-  background: url(../images/header-sprites13.png) 0 0;
+  background: url(../images/mfw-logo-white2.png) 0 0;
 }
 
-.head .nav .nav-left > li:nth-of-type(1) {
+.header .head .nav .nav-left > li:nth-of-type(1) {
   padding: 0;
 }
 
-.head .nav .nav-left > li {
+.header .head .nav .nav-left > li {
   padding: 0px 14px;
 }
 
-.head .nav .nav-left > li:hover {
+.header .head .nav .nav-left > li:hover {
   color: #ff9d00;
   border-bottom: 2px solid #ff9d00;
 }
 
-.head .nav .nav-left > li:hover > a {
+.header .head .nav .nav-left > li:hover > a {
   color: #ff9d00;
 }
 
-.head .nav .nav-left > li > a {
-  color: #333;
+.header .head .nav .nav-left > li > a {
+  color: #fff;
   font-size: 16px;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
-.head .nav .nav-left .shop {
+.header .head .nav .nav-left .shop {
   position: relative;
 }
 
-.head .nav .nav-left .shop:hover {
+.header .head .nav .nav-left .shop:hover {
   border-bottom: 0;
   border-top: 2px solid #ff9d00;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
 
-.head .nav .nav-left .shop:hover .shop-list {
+.header .head .nav .nav-left .shop:hover .shop-list {
   display: block;
 }
 
-.head .nav .nav-left .shop .shop-list {
+.header .head .nav .nav-left .shop .shop-list {
   position: absolute;
   top: 68px;
   left: 0;
@@ -86,55 +111,55 @@ a {
   background: #eee;
 }
 
-.head .nav .nav-left .shop .shop-list li {
+.header .head .nav .nav-left .shop .shop-list li {
   padding: 0px 10px 0px;
   width: 124px;
   height: 40px;
   line-height: 40px;
 }
 
-.head .nav .nav-left .shop .shop-list li:hover {
+.header .head .nav .nav-left .shop .shop-list li:hover {
   border-bottom: 0;
   background: #ddd;
 }
 
-.head .nav .nav-left .shop .shop-list li:hover a {
+.header .head .nav .nav-left .shop .shop-list li:hover a {
   color: #444;
 }
 
-.head .nav .nav-left .shop .shop-list li a {
+.header .head .nav .nav-left .shop .shop-list li a {
   font-size: 14px;
   color: #333;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
-.head .nav .nav-left .shop .shop-list li a .hot {
+.header .head .nav .nav-left .shop .shop-list li a .hot {
   color: red;
   font-size: 30px;
 }
 
-.head .nav .nav-left .shop .shop-list li a .new {
+.header .head .nav .nav-left .shop .shop-list li a .new {
   color: skyblue;
   font-size: 35px;
 }
 
-.head .nav .nav-left .shequ {
+.header .head .nav .nav-left .shequ {
   position: relative;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
-.head .nav .nav-left .shequ:hover {
+.header .head .nav .nav-left .shequ:hover {
   border-bottom: 0;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-top: 2px solid #ff9d00;
 }
 
-.head .nav .nav-left .shequ:hover > .shequ-list {
+.header .head .nav .nav-left .shequ:hover > .shequ-list {
   display: block;
 }
 
-.head .nav .nav-left .shequ > .shequ-list {
+.header .head .nav .nav-left .shequ > .shequ-list {
   position: absolute;
   top: 68px;
   left: 0;
@@ -145,109 +170,711 @@ a {
   background-color: #eee;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-left {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-left {
   float: left;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-left > li {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-left > li {
   margin-left: 15px;
   height: 75px;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-left > li > .hot {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-left > li > .hot {
   color: red;
   font-size: 30px;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-left > li > .new {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-left > li > .new {
   color: skyblue;
   font-size: 30px;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-left > li > a {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-left > li > a {
   font-size: 16px;
   color: #444;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-left > li > a:hover {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-left > li > a:hover {
   color: #ff9d00;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-right {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-right {
   float: right;
   margin-top: 20px;
   margin-right: 50px;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-right > li {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-right > li {
   height: 32px;
   line-height: 32px;
   font-size: 14px;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-right > li > a {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-right > li > a {
   color: #444;
 }
 
-.head .nav .nav-left .shequ > .shequ-list > .list-right > li:hover a {
+.header .head .nav .nav-left .shequ > .shequ-list > .list-right > li:hover a {
   color: #ff9d00;
 }
 
-.head .nav .inpt {
-  display: inline-block;
-  padding: 0 10px;
-  width: 107px;
-  height: 33px;
+.header .head .nav .inpt {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 18.5px;
+  width: 127px;
+  height: 34px;
   line-height: 70px;
   border-radius: 4px;
-  margin-top: 18.5px;
-  border: 1px solid #efefef;
 }
 
-.head .nav .inpt input {
+.header .head .nav .inpt input {
+  float: left;
   margin-right: 10px;
   padding: 0 10px;
   width: 107px;
-  height: 33px;
+  height: 32px;
   border-radius: 4px;
-  border: 0;
+  border: 1px solid #efefef;
+  background-color: #efefef;
 }
 
-.head .nav .nav-right {
+.header .head .nav .inpt span {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/header-sprites13.png) -30px -110px;
+}
+
+.header .head .nav .nav-right {
   display: flex;
 }
 
-.head .nav .nav-right li:nth-of-type(5) {
+.header .head .nav .nav-right li:nth-of-type(5) {
   padding: 0;
 }
 
-.head .nav .nav-right li:nth-of-type(5) a {
+.header .head .nav .nav-right li:nth-of-type(5) a {
   padding-left: 10px;
   border-left: 1px solid #c9c9c9;
 }
 
-.head .nav .nav-right li {
+.header .head .nav .nav-right li {
   padding: 0px 10px;
 }
 
-.head .nav .nav-right li .line:hover {
+.header .head .nav .nav-right li .line:hover {
   text-decoration: underline;
 }
 
-.head .nav .nav-right li a {
+.header .head .nav .nav-right li a {
   color: #ff9d00;
   font-size: 14px;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
-.head .nav .nav-right li .iconfont {
+.header .head .nav .nav-right li .iconfont {
   font-size: 25px;
 }
 
-.head .nav .nav-right li .iconfont:hover {
+.header .head .nav .nav-right li .iconfont:hover {
   color: #fff;
   background-color: #ff9d00;
   border-radius: 50%;
 }
 
-/*=========头部导航end=========*/
+.header .h-search {
+  position: absolute;
+  top: 50%;
+  left: 21%;
+  padding: 15px;
+  width: 400px;
+  height: 111px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header .h-search h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Microsoft Yahei";
+  font-weight: normal;
+}
+
+.header .h-search .sea-inpt {
+  width: 400px;
+  height: 46px;
+}
+
+.header .h-search .sea-inpt input {
+  padding: 0 20px;
+  width: 308px;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  color: #666;
+  font-size: 18px;
+  font-family: "Microsoft Yahei";
+}
+
+.header .h-search .sea-inpt span {
+  float: right;
+  display: inline-block;
+  width: 45px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #ff9d00;
+}
+
+.header .h-search .sea-inpt span i {
+  margin: 11px 0 0 11px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  background: url(../images/header-sprites.png) 0 -110px;
+}
+
+.header .h-search .city {
+  width: 400px;
+}
+
+.header .h-search .city a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
+  font-family: "Microsoft Yahei";
+}
+
+.header .h-search .city a:hover {
+  text-decoration: underline;
+}
+
+.header .show-info {
+  position: absolute;
+  left: 54%;
+  top: 25%;
+  padding-right: 30px;
+  width: 550px;
+  height: 285px;
+  font-size: 0;
+  font-family: "Microsoft Yahei";
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  border-right: 6px solid #fff;
+}
+
+.header .show-info h2 {
+  margin-bottom: 25px;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.header .show-info h2 a {
+  color: #fff;
+}
+
+.header .show-info h2 a:hover {
+  color: #ff9d00;
+}
+
+.header .show-info p {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.header .show-info .read-more {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.header .show-info .read-more:hover {
+  color: #ff9d00;
+}
+
+.header .down {
+  position: absolute;
+  left: 865px;
+  bottom: 24px;
+  width: 36px;
+  height: 20px;
+  background: url(../images/place-sprites3.png) -30px -60px;
+}
+
+/*========头部结束======*/
+/* =========section start========*/
+.section .sec-des {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.section .sec-des .middle .destnation {
+  padding: 50px 0 40px 0;
+  width: 100%;
+}
+
+.section .sec-des .middle .destnation h2 {
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-des .middle .destnation .des-area {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section .sec-des .middle .destnation .des-area li {
+  display: inline-block;
+  text-align: center;
+}
+
+.section .sec-des .middle .destnation .des-area li:hover a {
+  color: #ff9d00;
+  border-bottom: 3px solid #ff9d00;
+}
+
+.section .sec-des .middle .destnation .des-area li a {
+  margin: 0 25px;
+  padding-bottom: 9px;
+  display: inline-block;
+  color: #333;
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: 3px solid transparent;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-des .middle .destnation .month {
+  margin-top: 20px;
+}
+
+.section .sec-des .middle .destnation .month li a {
+  margin: 0 20px;
+}
+
+.section .sec-des .middle .destnation .des-box {
+  overflow: hidden;
+  width: 100%;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left,
+.section .sec-des .middle .destnation .des-box box-right {
+  float: left;
+  width: 470px;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl,
+.section .sec-des .middle .destnation .des-box box-right dl {
+  float: left;
+  padding: 20px 0px 20px 100px;
+  border-bottom: 1px dashed #eee;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl dt,
+.section .sec-des .middle .destnation .des-box box-right dl dt {
+  float: left;
+  margin-left: -100px;
+  font-size: 16px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl dt a,
+.section .sec-des .middle .destnation .des-box box-right dl dt a {
+  font-size: 16px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  text-decoration: underline;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl dt a:hover,
+.section .sec-des .middle .destnation .des-box box-right dl dt a:hover {
+  color: #ff9d00;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl dd,
+.section .sec-des .middle .destnation .des-box box-right dl dd {
+  float: right;
+  width: 370px;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl dd a,
+.section .sec-des .middle .destnation .des-box box-right dl dd a {
+  margin-right: 10px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-des .middle .destnation .des-box .box-left dl dd a:hover,
+.section .sec-des .middle .destnation .des-box box-right dl dd a:hover {
+  color: #ff9d00;
+}
+
+.section .sec-des .middle .destnation .des-box .box-right {
+  float: right;
+  width: 470px;
+}
+
+.section .sec-des .middle .destnation .city-box {
+  overflow: hidden;
+  width: 1020px;
+  height: 480px;
+}
+
+.section .sec-des .middle .destnation .city-box .big-box {
+  margin-bottom: 20px;
+}
+
+.section .sec-des .middle .destnation .city-box .big-box,
+.section .sec-des .middle .destnation .city-box .small-box {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+}
+
+.section .sec-des .middle .destnation .city-box .big-box a h3,
+.section .sec-des .middle .destnation .city-box .small-box a h3 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-des .middle .destnation .city-box .box-more a h3 {
+  left: 95px;
+  height: 105px;
+}
+
+.section .sec-des .middle .destnation .titles {
+  width: 1020px;
+  height: 720px;
+}
+
+.section .sec-des .middle .destnation .titles div {
+  float: left;
+  position: relative;
+  margin: 0 15px 20px 0;
+}
+
+.section .sec-des .middle .destnation .titles div a h3 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-world .middle h2 {
+  margin: 35px 0 20px 0;
+  color: #666;
+  font-size: 26px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-world .middle h2 span {
+  margin: 0 25px 0 5px;
+  color: #a8a8a8;
+  font-size: 14px;
+}
+
+.section .sec-world .middle h2 a {
+  color: #ff9d00;
+  font-size: 14px;
+}
+
+.section .sec-world .middle h2 a:hover {
+  text-decoration: underline;
+}
+
+.section .sec-world .middle h2 b {
+  color: #ff9d00;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.section .sec-world .middle dl {
+  margin-bottom: 50px;
+}
+
+.section .sec-world .middle dl dt {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #666;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-world .middle dl dd {
+  overflow: hidden;
+}
+
+.section .sec-world .middle dl dd .col {
+  float: left;
+  position: relative;
+  margin: 0 30px 0 30px;
+}
+
+.section .sec-world .middle dl dd .col li {
+  width: 270px;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.section .sec-world .middle dl dd .col li a {
+  color: #666;
+}
+
+.section .sec-world .middle dl dd .col li .en {
+  color: #999;
+}
+
+.section .sec-world .middle dl dd .col li .iconfont {
+  font-size: 30px;
+  color: #ff9d00;
+}
+
+.section .sec-world .middle dl dd .col .letter {
+  position: absolute;
+  left: -30px;
+  font-size: 20px;
+  font-family: Centaur, Times New Roman;
+  color: #666;
+}
+
+/* =========section end========*/
+/*===========页面底部start======*/
+.footer {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 500px;
+  background-color: #3c3c3c;
+}
+
+.footer .middle {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+}
+
+.footer .middle .ft-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8px 0px;
+  width: 984px;
+  height: 180px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.footer .middle .ft-info dt {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer .middle .ft-info .plate dd span,
+.footer .middle .ft-info .plate dd a {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info .about-us a {
+  color: #c2c2c2;
+}
+
+.footer .middle .ft-info .about-us a:hover {
+  color: #fff;
+}
+
+.footer .middle .ft-info dd:nth-of-type(7) a {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info dd:nth-of-type(7) a:hover {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info .servce dt {
+  text-align: center;
+}
+
+.footer .middle .ft-info .servce dd {
+  display: flex;
+}
+
+.footer .middle .ft-info .servce dd a {
+  color: #c2c2c2;
+}
+
+.footer .middle .ft-info .servce dd .ser-left li:nth-of-type(6) a {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-info .twohouse {
+  display: flex;
+}
+
+.footer .middle .ft-info .twohouse dt {
+  margin-right: 40px;
+}
+
+.footer .middle .ft-info .twohouse dt p {
+  text-align: center;
+}
+
+.footer .middle .ft-info .twohouse dd p {
+  text-align: center;
+}
+
+.footer .middle .ft-us {
+  margin-top: 22px;
+  padding: 0px 8px 18px;
+  width: 984px;
+  height: 58px;
+}
+
+.footer .middle .ft-us dt {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.footer .middle .ft-us dd {
+  height: 28px;
+  text-align: center;
+}
+
+.footer .middle .ft-us dd i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.footer .middle .ft-us dd .xinlang {
+  background: url(../images/mfw-footer-sprite5.png) 0 0;
+}
+
+.footer .middle .ft-us dd .weibo {
+  background: url(../images/mfw-footer-sprite5.png) -30px 0;
+}
+
+.footer .middle .ft-us dd .kongjian {
+  background: url(../images/mfw-footer-sprite5.png) -60px 0;
+}
+
+.footer .middle .link {
+  padding: 17px 8px;
+  width: 984px;
+  height: 65px;
+  border-top: 1px solid #575a5b;
+  border-bottom: 1px solid #575a5b;
+}
+
+.footer .middle .link a {
+  display: inline-block;
+  line-height: 16px;
+  font-size: 12px;
+  color: #c2c2c2;
+}
+
+.footer .middle .link a:hover {
+  color: #fff;
+}
+
+.footer .middle .ft-ft {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 1000px;
+  height: 43px;
+}
+
+.footer .middle .ft-ft dl {
+  display: flex;
+}
+
+.footer .middle .ft-ft dl dt {
+  margin-right: 20px;
+  display: inline-block;
+  width: 136px;
+  height: 39px;
+  background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+}
+
+.footer .middle .ft-ft dl dd {
+  font-size: 12px;
+  color: #c2c2c2;
+  line-height: 22px;
+}
+
+.footer .middle .ft-ft dl dd p a {
+  color: #c2c2c2;
+}
+
+.footer .middle .ft-ft dl dd p a:hover {
+  color: #fff;
+}
+
+.footer .middle .ft-ft dl dd p .map {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-ft dl dd p .map:hover {
+  color: #ff9d00;
+}
+
+.footer .middle .ft-ft ul {
+  display: flex;
+}
+
+.footer .middle .ft-ft ul li {
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.footer .middle .ft-ft ul li:nth-of-type(3) {
+  margin-right: 10px;
+}
+
+.footer .middle .ft-ft ul .chengx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+}
+
+.footer .middle .ft-ft ul .kex {
+  background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+}
+
+.footer .middle .ft-ft ul .wangx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -150px;
+}
+
+/*===========页面底部end========*/
