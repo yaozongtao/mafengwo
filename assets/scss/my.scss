@@ -1,0 +1,698 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .middle {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    @mixin font {
+        font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+    }
+    
+    .m-active {
+        width: 220px;
+        height: 22px;
+        text-align: center;
+        color: #444;
+        font-size: 16px;
+        font-weight: normal;
+        @include font;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        .header {
+            z-index: 10;
+            position: relative;
+            width: 100%;
+            height: 480px;
+            background: url(../images/wKgBZ1mW7VaAGPiyAAfBJ6U88qw98.jpeg) no-repeat center center;
+            &:hover {
+                .change-map,
+                .change-img {
+                    display: block;
+                }
+            }
+            /*=======头部导航start=======*/
+            .middle {
+                // ======
+                position: fixed;
+                width: 100%;
+                background: rgba(34, 35, 36, 0.95);
+                .top-bar {
+                    margin: 0 auto;
+                    width: 1000px;
+                    height: 46px;
+                    font-family: "Microsoft Yahei";
+                    .logo {
+                        float: left;
+                        margin: 9px 18px 0 0;
+                        a {
+                            display: inline-block;
+                            width: 32px;
+                            height: 29px;
+                            background-color: #ff9d00;
+                            background: url(../images/logo.png);
+                        }
+                    }
+                    .bar-left {
+                        line-height: 46px;
+                        li {
+                            float: left;
+                            font-size: 16px;
+                            font-weight: normal;
+                            &:hover {
+                                background-color: #000;
+                            }
+                            a {
+                                padding: 15px 17px;
+                                color: #fff;
+                            }
+                        }
+                        .more {
+                            position: relative;
+                            .more-list {
+                                position: absolute;
+                                top: 46px;
+                                left: 0px;
+                                display: none;
+                                background-color: rgba(34, 35, 36, 0.95);
+                                li {
+                                    padding-left: 10px;
+                                    width: 110px;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    a {
+                                        margin: 0;
+                                        padding: 0;
+                                        color: #fff;
+                                        font-size: 14px;
+                                        font-weight: normal;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .more-list {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .bar-search {
+                        position: relative;
+                        float: left;
+                        margin-top: 10px;
+                        font-size: 0;
+                        input {
+                            padding: 0 30px 0 8px;
+                            width: 112px;
+                            height: 24px;
+                            outline: none;
+                            border: 1px solid #666;
+                            background-color: #666;
+                        }
+                        i {
+                            position: absolute;
+                            top: 4px;
+                            right: 4px;
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            background-color: #fff;
+                            background: url(../images/topbar-bg.png) 0 -34px;
+                        }
+                    }
+                    .bar-right {
+                        line-height: 46px;
+                        li {
+                            float: left;
+                            font-size: 0;
+                            height: 46px;
+                            a {
+                                font-size: 16px;
+                                color: #fff;
+                                img {
+                                    float: left;
+                                    margin-top: 7px;
+                                }
+                            }
+                            .recommend {
+                                margin: 11px 15px 0 12px;
+                                display: inline-block;
+                                width: 60px;
+                                height: 24px;
+                                line-height: 24px;
+                                text-align: center;
+                                font-size: 12px;
+                                font-weight: normal;
+                                color: #fff;
+                                border-radius: 4px;
+                                background-color: #ff9d00;
+                            }
+                        }
+                        .r-acvt {
+                            padding: 0 15px 0 12px;
+                            &:hover {
+                                background-color: #000;
+                            }
+                        }
+                        .massage {
+                            position: relative;
+                            .massage-list {
+                                display: none;
+                                position: absolute;
+                                top: 46px;
+                                left: -45px;
+                                width: 120px;
+                                height: 150px;
+                                background-color: rgba(34, 35, 36, 0.95);
+                                li {
+                                    padding: 0 10px;
+                                    width: 100px;
+                                    height: 29px;
+                                    line-height: 29px;
+                                    &:hover {
+                                        background-color: #000;
+                                    }
+                                    a {
+                                        color: #fff;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .massage-list {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .my {
+                            position: relative;
+                            &:hover {
+                                .my-list {
+                                    display: block;
+                                }
+                            }
+                            .my-list {
+                                display: none;
+                                position: absolute;
+                                top: 46px;
+                                left: -95px;
+                                width: 170px;
+                                height: 360px;
+                                background-color: rgba(34, 35, 36, 0.95);
+                                li {
+                                    padding-left: 10px;
+                                    width: 160px;
+                                    height: 29px;
+                                    line-height: 29px;
+                                    &:hover {
+                                        background-color: #000;
+                                    }
+                                    a {
+                                        font-size: 13px;
+                                        font-weight: normal;
+                                        color: #fff;
+                                    }
+                                }
+                                li:nth-of-type(1) {
+                                    background-color: #ff9d00;
+                                    &:hover {
+                                        background-color: #ff9d00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /*=======头部导航end========*/
+            .change-img,
+            .change-map {
+                position: absolute;
+                bottom: 30px;
+                overflow: hidden;
+                display: inline-block;
+                display: none;
+                padding: 0 30px 0 20px;
+                width: 119px;
+                height: 39px;
+                line-height: 39px;
+                font-size: 14px;
+                color: #fff;
+                @include font;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, .5);
+                &:hover {
+                    color: #ff9d00;
+                }
+                i {
+                    margin-right: 5px;
+                    float: left;
+                    margin-top: 6px;
+                }
+            }
+            .change-img {
+                right: 34.5%;
+                &:hover {
+                    i {
+                        background: url(../images/home_sprite_v15.png) -78px -165px;
+                    }
+                }
+                i {
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    background: url(../images/home_sprite_v15.png) -78px -137px;
+                }
+            }
+            .change-map {
+                right: 24%;
+                &:hover {
+                    i {
+                        background: url(../images/home_sprite_v15.png) -51px -165px;
+                    }
+                }
+                i {
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    background: url(../images/home_sprite_v15.png) -51px -138px;
+                }
+            }
+        }
+        .section {
+            width: 100%;
+            margin: 0 auto;
+            .sec-bar {
+                //z-index: 0;
+                width: 100%;
+                height: 59px;
+                background-color: #fff;
+                border-bottom: 1px solid #d6d6d6;
+                box-shadow: 0 2p 5px rgba(0, 0, 0, .12);
+                .bar-middle {
+                    z-index: 0;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    width: 980px;
+                    height: 59px;
+                    >ul {
+                        float: right;
+                        >li {
+                            float: left;
+                            line-height: 56px;
+                            >a {
+                                margin-right: 12px;
+                                padding: 18px 15px;
+                                color: #444;
+                                font-size: 18px;
+                                font-weight: normal;
+                                @include font;
+                                border-bottom: 3px solid transparent;
+                                &:hover {
+                                    color: #ff9d00;
+                                }
+                                i {
+                                    margin-left: 5px;
+                                    display: inline-block;
+                                    width: 12px;
+                                    height: 7px;
+                                    background: url(../images/ico_sprite_v8.png) -93px -60px;
+                                }
+                            }
+                        }
+                        .bar-click {
+                            a {
+                                border-bottom: 3px solid #ff9d00;
+                            }
+                        }
+                        .bar-more {
+                            position: relative;
+                            &:hover {
+                                a {
+                                    color: #444;
+                                }
+                                .bar-more-list {
+                                    display: block;
+                                }
+                            }
+                            .bar-more-list {
+                                display: none;
+                                position: absolute;
+                                top: 59px;
+                                right: 15px;
+                                width: 140px;
+                                height: 310px;
+                                background-color: #fff;
+                                border-radius: 10px 0 10px 10px;
+                                border: 1px solid #6d6d6d;
+                                box-shadow: 2px 2px 3px rgba(144, 144, 144, .4);
+                                li:nth-of-type(1) {
+                                    margin-top: 15px;
+                                }
+                                li {
+                                    padding: 0 20px;
+                                    width: 100px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    &:hover {
+                                        background-color: #ff9d00;
+                                        a {
+                                            color: #fff;
+                                        }
+                                    }
+                                    a {
+                                        font-size: 0;
+                                        color: #654939;
+                                        font-size: 14px;
+                                        font-weight: normal;
+                                        @include font;
+                                        i {
+                                            margin: 3px 5px 0 0;
+                                            display: inline-block;
+                                            width: 16px;
+                                            height: 16px;
+                                            background: url(../images/home_sprite_v15.png) -347px -139px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main {
+                width: 100%;
+                background-color: #efefef;
+                .middle {
+                    overflow: hidden;
+                    margin: 0 auto;
+                    width: 980px;
+                    height: 1800px;
+                    .m-left {
+                        float: left;
+                        width: 280px;
+                        height: 1800px;
+                        background-color: pink;
+                        .m-info {
+                            position: relative;
+                            width: 280px;
+                            height: 312px;
+                            background-color: #fff;
+                            //z-index: 100;
+                            img {
+                                position: absolute;
+                                top: -50px;
+                                left: 80px;
+                                border-radius: 50%;
+                                //z-index: 100;
+                            }
+                            h2 {
+                                padding-top: 76px;
+                                color: #666;
+                                line-height: 24px;
+                                text-align: center;
+                                font-size: 22px;
+                                font-weight: normal;
+                                @include font;
+                                span {
+                                    margin-left: 15px;
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    background: url(../images/ico_sprite_v8.png) 0 -236px;
+                                }
+                            }
+                            .mark {
+                                margin: 10px 0;
+                                width: 280px;
+                                height: 24px;
+                                text-align: center;
+                                a {
+                                    display: inline-block;
+                                    margin-right: 3px;
+                                    height: 20px;
+                                }
+                                .vip {
+                                    width: 40px;
+                                    background: url(../images/home_sprite_v15.png) 0 -460px;
+                                }
+                                .duo {
+                                    width: 30px;
+                                    background: url(../images/home_sprite_v15.png) -41px -460px;
+                                }
+                                .xing {
+                                    width: 38px;
+                                    background: url(../images/home_sprite_v15.png) -72px -460px;
+                                }
+                            }
+                            .dengji {
+                                margin-top: 16px;
+                                padding: 0 15px;
+                                width: 250px;
+                                height: 18px;
+                                text-align: center;
+                                overflow: hidden;
+                                span {
+                                    float: left;
+                                    padding: 0 10px 0 7px;
+                                    width: 73px;
+                                    height: 15px;
+                                    border-right: 1px solid #999;
+                                    color: #666;
+                                    font-size: 14px;
+                                    @include font;
+                                    a {
+                                        color: #ea3c1a;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        font-family: Arial;
+                                        &:hover {
+                                            border-bottom: 1px solid #ea3c1a;
+                                        }
+                                    }
+                                }
+                                i {
+                                    width: 60px;
+                                    height: 100%;
+                                    display: inline-block;
+                                    text-align: center;
+                                    width: 17px;
+                                    height: 17px;
+                                    background: url(../images/ico_sprite_v8.png) -108px -146px;
+                                }
+                            }
+                            .my-info {
+                                margin: 20px;
+                                display: inline-block;
+                                width: 240px;
+                                height: 30px;
+                                line-height: 30px;
+                                text-align: center;
+                                color: #666;
+                                font-size: 14px;
+                                font-weight: normal;
+                                @include font;
+                                background-color: #efefef;
+                                border-radius: 4px;
+                                &:hover {
+                                    color: #fff;
+                                    background-color: #ff9d00;
+                                }
+                            }
+                            .num {
+                                overflow: hidden;
+                                border-top: 1px solid #e2e2e2;
+                                border-bottom: 1px solid #e2e2e2;
+                                div {
+                                    float: left;
+                                    padding: 10px 0;
+                                    width: 92px;
+                                    height: 52px;
+                                    border-right: 1px solid #e2e2e2;
+                                    a {
+                                        margin-left: 40px;
+                                        color: #444;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        line-height: 20px;
+                                        font-family: Arial;
+                                        &:hover {
+                                            border-bottom: 2px solid #444;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                        text-align: center;
+                                        line-height: 20px;
+                                        color: #666;
+                                    }
+                                }
+                            }
+                        }
+                        .honor {
+                            position: relative;
+                            padding: 18px 0 25px;
+                            width: 280px;
+                            height: 135px;
+                            background-color: #f6f6f6;
+                            div {
+                                width: 280px;
+                                height: 16px;
+                                text-align: center;
+                                color: #666;
+                                font-size: 12px;
+                                font-weight: normal;
+                            }
+                            .img-t {
+                                position: absolute;
+                                left: 40px;
+                                top: 40px;
+                                display: inline-block;
+                                width: 48px;
+                                height: 48px;
+                                background: url(../images/honor_sprite.png) -48px 0;
+                            }
+                            .img-b {
+                                position: absolute;
+                                left: 40px;
+                                top: 100px;
+                                display: inline-block;
+                                width: 48px;
+                                height: 48px;
+                                background: url(../images/honor_sprite.png) 0 0;
+                            }
+                            .dir {
+                                display: inline-block;
+                                width: 10px;
+                                height: 18px;
+                                position: absolute;
+                                top: 75px;
+                            }
+                            .le {
+                                left: 20px;
+                                background: url(../images/ico_sprite_v8.png) -23px -39px;
+                            }
+                            .ri {
+                                right: 20px;
+                                background: url(../images/ico_sprite_v8.png) -35px -39px;
+                            }
+                        }
+                        .my-see {
+                            padding: 45px 30px 0;
+                            width: 220px;
+                            height: 134px;
+                            // ====
+                            ul {
+                                margin-top: 20px;
+                                li {
+                                    float: left;
+                                    margin: 0 4px 20px 0;
+                                    width: 51px;
+                                    height: 74px;
+                                    a {
+                                        display: block;
+                                        text-align: center;
+                                        margin-top: 10px;
+                                        color: #ff7200;
+                                        font-size: 12px;
+                                        font-weight: normal;
+                                        @include font;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .my-group {
+                            padding: 45px 15px 0;
+                            width: 250px;
+                            height: 150px;
+                            div {
+                                width: 250px;
+                            }
+                            ul {
+                                overflow: hidden;
+                                li {
+                                    float: left;
+                                    margin-right: 3px;
+                                    width: 80px;
+                                    height: 110px;
+                                    a {
+                                        display: block;
+                                        text-align: center;
+                                        margin-top: 5px;
+                                        color: #ff7200;
+                                        font-size: 12px;
+                                        font-weight: normal;
+                                        @include font;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .say {
+                            padding: 45px 15px 0;
+                            width: 250px;
+                            height: 204px;
+                            div {
+                                width: 250px;
+                            }
+                            textarea {
+                                margin-top: 20px;
+                                padding: 15px;
+                                width: 218px;
+                                height: 78px;
+                                outline: none;
+                                border: 1px solid transparent;
+                                border: 0;
+                                background-color: #efefef;
+                            }
+                            a {
+                                margin-top: 10px;
+                                display: inline-block;
+                                width: 250px;
+                                height: 30px;
+                                line-height: 30px;
+                                text-align: center;
+                                border-radius: 3px;
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: normal;
+                                background-color: #ccc;
+                                &:hover {
+                                    background-color: #ff8a00;
+                                    transition: background-color .3s;
+                                }
+                            }
+                        }
+                    }
+                    .m-right {
+                        float: right;
+                        width: 680px;
+                        height: 800px;
+                        background-color: pink;
+                        .m-nav {
+                            margin-bottom: 18px;
+                            padding: 20px 0 17px;
+                            width: 680px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
