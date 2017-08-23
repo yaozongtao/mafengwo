@@ -294,15 +294,14 @@
             width: 100%;
             margin: 0 auto;
             .sec-bar {
-                //z-index: 0;
                 width: 100%;
                 height: 59px;
                 background-color: #fff;
                 border-bottom: 1px solid #d6d6d6;
                 box-shadow: 0 2p 5px rgba(0, 0, 0, .12);
                 .bar-middle {
-                    z-index: 0;
-                    overflow: hidden;
+                    position: relative;
+                    // overflow: hidden;
                     margin: 0 auto;
                     width: 980px;
                     height: 59px;
@@ -347,6 +346,7 @@
                                 }
                             }
                             .bar-more-list {
+                                z-index: 10;
                                 display: none;
                                 position: absolute;
                                 top: 59px;
@@ -398,12 +398,13 @@
                     overflow: hidden;
                     margin: 0 auto;
                     width: 980px;
-                    height: 1800px;
+                    height: 100%;
                     .m-left {
+                        // =====?????????????????????????????????
+                        position: absolute;
                         float: left;
                         width: 280px;
-                        height: 1800px;
-                        background-color: pink;
+                        height: 100%;
                         .m-info {
                             position: relative;
                             width: 280px;
@@ -592,6 +593,7 @@
                             padding: 45px 30px 0;
                             width: 220px;
                             height: 134px;
+                            background-color: #fff;
                             // ====
                             ul {
                                 margin-top: 20px;
@@ -619,6 +621,7 @@
                             padding: 45px 15px 0;
                             width: 250px;
                             height: 150px;
+                            background-color: #fff;
                             div {
                                 width: 250px;
                             }
@@ -648,6 +651,7 @@
                             padding: 45px 15px 0;
                             width: 250px;
                             height: 204px;
+                            background-color: #fff;
                             div {
                                 width: 250px;
                             }
@@ -683,14 +687,407 @@
                     .m-right {
                         float: right;
                         width: 680px;
-                        height: 800px;
-                        background-color: pink;
+                        height: 100%;
                         .m-nav {
+                            margin-top: 20px;
                             margin-bottom: 18px;
                             padding: 20px 0 17px;
                             width: 680px;
                             height: 80px;
+                            border: 1px solid #e2e2e2;
+                            box-shadow: 0 0 2px rgba(0, 0, 0, .05);
+                            background-color: #fff;
+                            ul {
+                                overflow: hidden;
+                                li {
+                                    float: left;
+                                    width: 169px;
+                                    height: 76px;
+                                    border-right: 1px solid #e2e2e2;
+                                    .write-note {
+                                        display: block;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        width: 45px;
+                                        height: 46px;
+                                        background: url(../images/home_sprite_v15.png) -210px -476px;
+                                        &:hover {
+                                            background: url(../images/home_sprite_v15.png) -210px -425px;
+                                        }
+                                    }
+                                    .ask-expert {
+                                        display: block;
+                                        margin: 0 auto;
+                                        width: 53px;
+                                        height: 46px;
+                                        background: url(../images/home_sprite_v15.png) -260px -427px;
+                                        &:hover {
+                                            background: url(../images/home_sprite_v15.png) -260px -477px;
+                                        }
+                                    }
+                                    .add-foot {
+                                        display: block;
+                                        margin: 0 auto;
+                                        width: 56px;
+                                        height: 49px;
+                                        background: url(../images/home_sprite_v15.png) -317px -422px;
+                                        &:hover {
+                                            background: url(../images/home_sprite_v15.png) -317px -472px;
+                                        }
+                                    }
+                                    .invite {
+                                        display: block;
+                                        margin: 0 auto;
+                                        width: 45px;
+                                        height: 47px;
+                                        background: url(../images/home_sprite_v15.png) -379px -424px;
+                                        &:hover {
+                                            background: url(../images/home_sprite_v15.png) -379px -474px;
+                                        }
+                                    }
+                                    span {
+                                        a {
+                                            margin-top: 6px;
+                                            display: inline-block;
+                                            width: 169px;
+                                            text-align: center;
+                                            color: #999;
+                                            font-size: 16px;
+                                            font-weight: normal;
+                                            @include font;
+                                            &:hover {
+                                                color: #ff9d00;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
+                        .my-house {
+                            margin-bottom: 30px;
+                            padding: 28px 30px 30px;
+                            width: 623px;
+                            height: 342px;
+                            background-color: #f5dc52;
+                            box-shadow: 2px 3px 0 #dfca58;
+                            p {
+                                line-height: 30px;
+                                color: #333;
+                                font-size: 14px;
+                                font-weight: normal;
+                                @include font;
+                                strong {
+                                    font-size: 18px;
+                                    color: #ff7200;
+                                    font-weight: normal;
+                                }
+                            }
+                            div {
+                                float: left;
+                                margin-top: 20px;
+                                margin-right: 9px;
+                                padding: 0 16px 30px;
+                                width: 166px;
+                                height: 229px;
+                                background-color: #fff;
+                                p {
+                                    color: #666;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                }
+                                a {
+                                    margin: 0 auto;
+                                    margin-top: 35px;
+                                    display: block;
+                                    width: 124px;
+                                    height: 36px;
+                                    line-height: 36px;
+                                    text-align: center;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                    @include font;
+                                    border-radius: 30px;
+                                    background-color: #f1744f;
+                                }
+                                i {
+                                    display: block;
+                                }
+                            }
+                            .your-info {
+                                i {
+                                    margin: 20px auto;
+                                    width: 59px;
+                                    height: 71px;
+                                    background: url(../images/default_sprite_v6.png) -1px -256px;
+                                }
+                            }
+                            .see-expert {
+                                i {
+                                    margin: 18px auto;
+                                    width: 72px;
+                                    height: 76px;
+                                    background: url(../images/default_sprite_v6.png) -67px -256px;
+                                }
+                            }
+                            .mf-vip {
+                                i {
+                                    margin: 15px auto;
+                                    width: 71px;
+                                    height: 81px;
+                                    background: url(../images/default_sprite_v6.png) -147px -255px;
+                                }
+                                a {
+                                    position: relative;
+                                    background-color: #4ea88f;
+                                    i {
+                                        position: absolute;
+                                        top: -13px;
+                                        left: 2px;
+                                        display: inline-block;
+                                        width: 32px;
+                                        height: 32px;
+                                        background: url(../images/home_sprite_v15.png) -66px -210px;
+                                    }
+                                }
+                            }
+                        }
+                        .ding {
+                            margin-bottom: 18px;
+                            padding: 25px 25px 15px;
+                            width: 630px;
+                            height: 162px;
+                            background-color: #fff;
+                            border: 1px solid #e2e2e2;
+                            box-shadow: 0 0 2px rgba(0, 0, 0, .05);
+                            p {
+                                color: #666;
+                                font-size: 14px;
+                                font-weight: normal;
+                                @include font;
+                                line-height: 24px;
+                                margin-bottom: 8px;
+                                a {
+                                    color: #ff8a00;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        .writing {
+                            margin-top: 18px;
+                            padding-bottom: 30px;
+                            width: 680px;
+                            height: 490px;
+                            background-color: #fff;
+                            border: 1px solid #e2e2e2;
+                            box-shadow: 0 0 2px rgba(0, 0, 0, .05);
+                            .w-head {
+                                position: relative;
+                                padding: 25px 30px;
+                                line-height: 30px;
+                                h2 {
+                                    color: #666;
+                                    font-size: 16px;
+                                    font-weight: normal;
+                                    @include font;
+                                }
+                                a {
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 30px;
+                                    display: block;
+                                    width: 140px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    background-color: #ff9d00;
+                                    color: #fff;
+                                    font-size: 16px;
+                                    font-weight: normal;
+                                    @include font;
+                                    i {
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                        width: 18px;
+                                        height: 18px;
+                                        background: url(../images/home_sprite_v15.png) -228px -325px;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                            .w-content {
+                                width: 680px;
+                                height: 360px;
+                                background: url(../images/noyj_v2.jpg) no-repeat;
+                            }
+                            a {
+                                margin: 15px 0 0 30px;
+                                display: inline-block;
+                                width: 92px;
+                                height: 19px;
+                                font-size: 14px;
+                                font-weight: normal;
+                                color: #999;
+                                &:hover {
+                                    color: #ff9d00;
+                                    i {
+                                        background: url(../images/ico_sprite_v8.png) -68px -215px;
+                                    }
+                                }
+                                i {
+                                    margin-right: 5px;
+                                    display: inline-block;
+                                    width: 17px;
+                                    height: 17px;
+                                    vertical-align: middle;
+                                    background: url(../images/ico_sprite_v8.png) -50px -215px;
+                                }
+                            }
+                        }
+                        .answer,
+                        .comment {
+                            margin-bottom: 18px;
+                            padding-bottom: 30px;
+                            width: 680px;
+                            height: 320px;
+                            background-color: #fff;
+                            boder: 1px solid #e2e2e2;
+                            box-shadow: 0 0 2px rgba(0, 0, 0, .05);
+                            .an-head {
+                                padding: 25px 30px;
+                                width: 620px;
+                                height: 32px;
+                                color: #666;
+                                font-size: 16px;
+                                font-weight: normal;
+                                @include font;
+                                line-height: 30px;
+                            }
+                        }
+                        .answer {
+                            .an-content {
+                                position: relative;
+                                padding: 5px 0 50px 365px;
+                                width: 315px;
+                                height: 183px;
+                                p {
+                                    position: absolute;
+                                    top: 90px;
+                                    left: 110px;
+                                    display: block;
+                                    width: 220px;
+                                    height: 98px;
+                                    color: #999;
+                                    font-size: 16px;
+                                    font-weight: normal;
+                                    @include font;
+                                    line-height: 25px;
+                                }
+                                i {
+                                    display: inline-block;
+                                    width: 176px;
+                                    height: 183px;
+                                    background: url(../images/default_sprite_v6.png) -227px -65px;
+                                }
+                            }
+                        }
+                        .comment {
+                            .c-content {
+                                position: relative;
+                                padding: 0 0 50px 145px;
+                                width: 535px;
+                                height: 177px;
+                                i {
+                                    display: inline-block;
+                                    width: 199px;
+                                    height: 177px;
+                                    background: url(../images/default_sprite_v6.png) -409px -66px;
+                                }
+                                p {
+                                    position: absolute;
+                                    top: 90px;
+                                    left: 310px;
+                                    display: block;
+                                    width: 190px;
+                                    height: 89px;
+                                    color: #999;
+                                    font-size: 16px;
+                                    font-weight: normal;
+                                    @include font;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding-bottom: 20px;
+            width: 100%;
+            height: 68px;
+            background-color: #3c3c3c;
+            .ft-ft {
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 0;
+                width: 1000px;
+                height: 43px;
+                dl {
+                    display: flex;
+                    dt {
+                        margin-right: 20px;
+                        display: inline-block;
+                        width: 136px;
+                        height: 39px;
+                        background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+                    }
+                    dd {
+                        font-size: 12px;
+                        @include font;
+                        color: #c2c2c2;
+                        line-height: 22px;
+                        p {
+                            a {
+                                color: #c2c2c2;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                            .map {
+                                color: #ff9d00;
+                                &:hover {
+                                    color: #ff9d00;
+                                }
+                            }
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    li {
+                        margin-left: 10px;
+                        width: 90px;
+                        height: 30px;
+                    }
+                    li:nth-of-type(3) {
+                        margin-right: 10px;
+                    }
+                    .chengx {
+                        background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+                    }
+                    .kex {
+                        background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+                    }
+                    .wangx {
+                        background: url(../images/mfw-footer-sprite5.png) 0 -150px;
                     }
                 }
             }

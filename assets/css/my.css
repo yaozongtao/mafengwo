@@ -340,8 +340,7 @@ a {
 }
 
 .container .section .sec-bar .bar-middle {
-  z-index: 0;
-  overflow: hidden;
+  position: relative;
   margin: 0 auto;
   width: 980px;
   height: 59px;
@@ -395,6 +394,7 @@ a {
 }
 
 .container .section .sec-bar .bar-middle > ul .bar-more .bar-more-list {
+  z-index: 10;
   display: none;
   position: absolute;
   top: 59px;
@@ -451,14 +451,14 @@ a {
   overflow: hidden;
   margin: 0 auto;
   width: 980px;
-  height: 1800px;
+  height: 100%;
 }
 
 .container .section .main .middle .m-left {
+  position: absolute;
   float: left;
   width: 280px;
-  height: 1800px;
-  background-color: pink;
+  height: 100%;
 }
 
 .container .section .main .middle .m-left .m-info {
@@ -675,6 +675,7 @@ a {
   padding: 45px 30px 0;
   width: 220px;
   height: 134px;
+  background-color: #fff;
 }
 
 .container .section .main .middle .m-left .my-see ul {
@@ -706,6 +707,7 @@ a {
   padding: 45px 15px 0;
   width: 250px;
   height: 150px;
+  background-color: #fff;
 }
 
 .container .section .main .middle .m-left .my-group div {
@@ -741,6 +743,7 @@ a {
   padding: 45px 15px 0;
   width: 250px;
   height: 204px;
+  background-color: #fff;
 }
 
 .container .section .main .middle .m-left .say div {
@@ -780,13 +783,455 @@ a {
 .container .section .main .middle .m-right {
   float: right;
   width: 680px;
-  height: 800px;
-  background-color: pink;
+  height: 100%;
 }
 
 .container .section .main .middle .m-right .m-nav {
+  margin-top: 20px;
   margin-bottom: 18px;
   padding: 20px 0 17px;
   width: 680px;
   height: 80px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.container .section .main .middle .m-right .m-nav ul {
+  overflow: hidden;
+}
+
+.container .section .main .middle .m-right .m-nav ul li {
+  float: left;
+  width: 169px;
+  height: 76px;
+  border-right: 1px solid #e2e2e2;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .write-note {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 45px;
+  height: 46px;
+  background: url(../images/home_sprite_v15.png) -210px -476px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .write-note:hover {
+  background: url(../images/home_sprite_v15.png) -210px -425px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .ask-expert {
+  display: block;
+  margin: 0 auto;
+  width: 53px;
+  height: 46px;
+  background: url(../images/home_sprite_v15.png) -260px -427px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .ask-expert:hover {
+  background: url(../images/home_sprite_v15.png) -260px -477px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .add-foot {
+  display: block;
+  margin: 0 auto;
+  width: 56px;
+  height: 49px;
+  background: url(../images/home_sprite_v15.png) -317px -422px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .add-foot:hover {
+  background: url(../images/home_sprite_v15.png) -317px -472px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .invite {
+  display: block;
+  margin: 0 auto;
+  width: 45px;
+  height: 47px;
+  background: url(../images/home_sprite_v15.png) -379px -424px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li .invite:hover {
+  background: url(../images/home_sprite_v15.png) -379px -474px;
+}
+
+.container .section .main .middle .m-right .m-nav ul li span a {
+  margin-top: 6px;
+  display: inline-block;
+  width: 169px;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .main .middle .m-right .m-nav ul li span a:hover {
+  color: #ff9d00;
+}
+
+.container .section .main .middle .m-right .my-house {
+  margin-bottom: 30px;
+  padding: 28px 30px 30px;
+  width: 623px;
+  height: 342px;
+  background-color: #f5dc52;
+  box-shadow: 2px 3px 0 #dfca58;
+}
+
+.container .section .main .middle .m-right .my-house p {
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .main .middle .m-right .my-house p strong {
+  font-size: 18px;
+  color: #ff7200;
+  font-weight: normal;
+}
+
+.container .section .main .middle .m-right .my-house div {
+  float: left;
+  margin-top: 20px;
+  margin-right: 9px;
+  padding: 0 16px 30px;
+  width: 166px;
+  height: 229px;
+  background-color: #fff;
+}
+
+.container .section .main .middle .m-right .my-house div p {
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container .section .main .middle .m-right .my-house div a {
+  margin: 0 auto;
+  margin-top: 35px;
+  display: block;
+  width: 124px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  border-radius: 30px;
+  background-color: #f1744f;
+}
+
+.container .section .main .middle .m-right .my-house div i {
+  display: block;
+}
+
+.container .section .main .middle .m-right .my-house .your-info i {
+  margin: 20px auto;
+  width: 59px;
+  height: 71px;
+  background: url(../images/default_sprite_v6.png) -1px -256px;
+}
+
+.container .section .main .middle .m-right .my-house .see-expert i {
+  margin: 18px auto;
+  width: 72px;
+  height: 76px;
+  background: url(../images/default_sprite_v6.png) -67px -256px;
+}
+
+.container .section .main .middle .m-right .my-house .mf-vip i {
+  margin: 15px auto;
+  width: 71px;
+  height: 81px;
+  background: url(../images/default_sprite_v6.png) -147px -255px;
+}
+
+.container .section .main .middle .m-right .my-house .mf-vip a {
+  position: relative;
+  background-color: #4ea88f;
+}
+
+.container .section .main .middle .m-right .my-house .mf-vip a i {
+  position: absolute;
+  top: -13px;
+  left: 2px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../images/home_sprite_v15.png) -66px -210px;
+}
+
+.container .section .main .middle .m-right .ding {
+  margin-bottom: 18px;
+  padding: 25px 25px 15px;
+  width: 630px;
+  height: 162px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.container .section .main .middle .m-right .ding p {
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.container .section .main .middle .m-right .ding p a {
+  color: #ff8a00;
+}
+
+.container .section .main .middle .m-right .ding p a:hover {
+  text-decoration: underline;
+}
+
+.container .section .main .middle .m-right .ding p span {
+  font-size: 12px;
+}
+
+.container .section .main .middle .m-right .writing {
+  margin-top: 18px;
+  padding-bottom: 30px;
+  width: 680px;
+  height: 490px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.container .section .main .middle .m-right .writing .w-head {
+  position: relative;
+  padding: 25px 30px;
+  line-height: 30px;
+}
+
+.container .section .main .middle .m-right .writing .w-head h2 {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .main .middle .m-right .writing .w-head a {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ff9d00;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .main .middle .m-right .writing .w-head a i {
+  display: inline-block;
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  background: url(../images/home_sprite_v15.png) -228px -325px;
+  vertical-align: middle;
+}
+
+.container .section .main .middle .m-right .writing .w-content {
+  width: 680px;
+  height: 360px;
+  background: url(../images/noyj_v2.jpg) no-repeat;
+}
+
+.container .section .main .middle .m-right .writing a {
+  margin: 15px 0 0 30px;
+  display: inline-block;
+  width: 92px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999;
+}
+
+.container .section .main .middle .m-right .writing a:hover {
+  color: #ff9d00;
+}
+
+.container .section .main .middle .m-right .writing a:hover i {
+  background: url(../images/ico_sprite_v8.png) -68px -215px;
+}
+
+.container .section .main .middle .m-right .writing a i {
+  margin-right: 5px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  background: url(../images/ico_sprite_v8.png) -50px -215px;
+}
+
+.container .section .main .middle .m-right .answer,
+.container .section .main .middle .m-right .comment {
+  margin-bottom: 18px;
+  padding-bottom: 30px;
+  width: 680px;
+  height: 320px;
+  background-color: #fff;
+  boder: 1px solid #e2e2e2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.container .section .main .middle .m-right .answer .an-head,
+.container .section .main .middle .m-right .comment .an-head {
+  padding: 25px 30px;
+  width: 620px;
+  height: 32px;
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 30px;
+}
+
+.container .section .main .middle .m-right .answer .an-content {
+  position: relative;
+  padding: 5px 0 50px 365px;
+  width: 315px;
+  height: 183px;
+}
+
+.container .section .main .middle .m-right .answer .an-content p {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  display: block;
+  width: 220px;
+  height: 98px;
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 25px;
+}
+
+.container .section .main .middle .m-right .answer .an-content i {
+  display: inline-block;
+  width: 176px;
+  height: 183px;
+  background: url(../images/default_sprite_v6.png) -227px -65px;
+}
+
+.container .section .main .middle .m-right .comment .c-content {
+  position: relative;
+  padding: 0 0 50px 145px;
+  width: 535px;
+  height: 177px;
+}
+
+.container .section .main .middle .m-right .comment .c-content i {
+  display: inline-block;
+  width: 199px;
+  height: 177px;
+  background: url(../images/default_sprite_v6.png) -409px -66px;
+}
+
+.container .section .main .middle .m-right .comment .c-content p {
+  position: absolute;
+  top: 90px;
+  left: 310px;
+  display: block;
+  width: 190px;
+  height: 89px;
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 25px;
+}
+
+.container .footer {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 68px;
+  background-color: #3c3c3c;
+}
+
+.container .footer .ft-ft {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 1000px;
+  height: 43px;
+}
+
+.container .footer .ft-ft dl {
+  display: flex;
+}
+
+.container .footer .ft-ft dl dt {
+  margin-right: 20px;
+  display: inline-block;
+  width: 136px;
+  height: 39px;
+  background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+}
+
+.container .footer .ft-ft dl dd {
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #c2c2c2;
+  line-height: 22px;
+}
+
+.container .footer .ft-ft dl dd p a {
+  color: #c2c2c2;
+}
+
+.container .footer .ft-ft dl dd p a:hover {
+  color: #fff;
+}
+
+.container .footer .ft-ft dl dd p .map {
+  color: #ff9d00;
+}
+
+.container .footer .ft-ft dl dd p .map:hover {
+  color: #ff9d00;
+}
+
+.container .footer .ft-ft ul {
+  display: flex;
+}
+
+.container .footer .ft-ft ul li {
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.container .footer .ft-ft ul li:nth-of-type(3) {
+  margin-right: 10px;
+}
+
+.container .footer .ft-ft ul .chengx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+}
+
+.container .footer .ft-ft ul .kex {
+  background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+}
+
+.container .footer .ft-ft ul .wangx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -150px;
 }
