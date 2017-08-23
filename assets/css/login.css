@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1734px;
+  height: 919px;
+  background-image: url(../images/33.jpg);
+  background-size: cover;
+}
+
+.container::before {
+  content: '';
+  background: url(../images/full_page_vignette.png) 0 0 rgba(0, 0, 0, 0.2);
+  background-size: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.container .middle {
+  width: 370px;
+  height: 435px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container .middle .logo a {
+  margin: 0 auto;
+  display: block;
+  width: 75px;
+  height: 90px;
+  background: url(../images/logo-new.png) no-repeat;
+}
+
+.container .middle .main {
+  padding-top: 26px;
+  width: 370px;
+  height: 295px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.container .middle .main form .form-field {
+  margin: 0 25px;
+  padding-top: 10px;
+  width: 320px;
+  height: 42px;
+}
+
+.container .middle .main form .form-field input {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 6px 0 6px 12px;
+  width: 306px;
+  height: 28px;
+  border: 1px solid #d8d8d8;
+  outline: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+  line-height: 28px;
+  box-shadow: 0 0 5px #fff;
+}
+
+.container .middle .main form .form-field input:focus {
+  border: 1px solid #ffa200;
+  box-shadow: 0 0 5px #ffa200;
+  outline: none;
+  transition: box-shadow 0.25s linear 0s;
+}
+
+.container .middle .main form .form-submit {
+  margin: 0px 25px;
+  padding-top: 12px;
+  width: 320px;
+  height: 42px;
+}
+
+.container .middle .main form .form-submit a button {
+  padding: 1px 6px;
+  width: 320px;
+  height: 42px;
+  border: none;
+  background: #ffa800;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .middle .main form .form-submit a button:hover {
+  background-color: #ffb01e;
+}
+
+.container .middle .main .agreement {
+  margin: 0 25px 25px 25px;
+  padding-top: 12px;
+  width: 320px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #ccc;
+  text-align: right;
+}
+
+.container .middle .main .agreement a {
+  color: #999;
+}
+
+.container .middle .main .agreement a:hover {
+  color: #3f200f;
+  text-decoration: underline;
+}
+
+.container .middle .main .sanfang {
+  padding: 15px 0 20px 24px;
+  width: 346px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #999;
+  border-top: 1px solid #ebebeb;
+}
+
+.container .middle .main .style {
+  padding-left: 25px;
+  width: 348px;
+  height: 84px;
+}
+
+.container .middle .main .style i {
+  margin: 0 20px 5px 10px;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+}
+
+.container .middle .main .style .weibo {
+  background: url(../images/c_icon3.gif) 0 0;
+}
+
+.container .middle .main .style .qq {
+  background: url(../images/c_icon3.gif) -42px 0;
+}
+
+.container .middle .main .style .wexin {
+  background: url(../images/c_icon3.gif) -294px 0;
+}
+
+.container .middle .main .tishi p {
+  margin: 20px 115px;
+  padding: 4px 0;
+  width: 140px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 15px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+}
+
+.container .middle .main .tishi p a {
+  color: #ffa800;
+}
+
+.container .middle .main .tishi p a:hover {
+  text-decoration: underline;
+}
