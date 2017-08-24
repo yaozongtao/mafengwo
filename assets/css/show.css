@@ -1,0 +1,871 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container .header {
+  /*=========头部导航start=======*/
+  /*=========头部导航end=========*/
+}
+
+.container .header .outer {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+.container .header .outer .nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 1010px;
+  height: 70px;
+  line-height: 70px;
+  /*========搜索框start======*/
+  /*========搜索框end======*/
+}
+
+.container .header .outer .nav .nav-left {
+  display: flex;
+}
+
+.container .header .outer .nav .nav-left .logon {
+  margin-top: 20px;
+  margin-right: 24px;
+  width: 136px;
+  height: 39px;
+  background: url(../images/header-sprites13.png) no-repeat 0 0;
+}
+
+.container .header .outer .nav .nav-left > li:nth-of-type(1) {
+  padding: 0;
+}
+
+.container .header .outer .nav .nav-left > li {
+  padding: 0px 14px;
+}
+
+.container .header .outer .nav .nav-left > li:hover {
+  color: #ff9d00;
+  border-bottom: 2px solid #ff9d00;
+}
+
+.container .header .outer .nav .nav-left > li:hover > a {
+  color: #ff9d00;
+}
+
+.container .header .outer .nav .nav-left > li > a {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .outer .nav .nav-left .shop {
+  position: relative;
+}
+
+.container .header .outer .nav .nav-left .shop:hover {
+  border-bottom: 0;
+  border-top: 2px solid #ff9d00;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.container .header .outer .nav .nav-left .shop:hover .shop-list {
+  display: block;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  padding: 0;
+  background: #eee;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list li {
+  padding: 0px 10px 0px;
+  width: 124px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list li:hover {
+  border-bottom: 0;
+  background: #ddd;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list li:hover a {
+  color: #444;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list li a {
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list li a .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.container .header .outer .nav .nav-left .shop .shop-list li a .new {
+  color: skyblue;
+  font-size: 35px;
+}
+
+.container .header .outer .nav .nav-left .shequ {
+  position: relative;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .outer .nav .nav-left .shequ:hover {
+  border-bottom: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid #ff9d00;
+}
+
+.container .header .outer .nav .nav-left .shequ:hover > .shequ-list {
+  display: block;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-left {
+  float: left;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-left > li {
+  margin-left: 15px;
+  height: 75px;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > .new {
+  color: skyblue;
+  font-size: 30px;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > a {
+  font-size: 16px;
+  color: #444;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > a:hover {
+  color: #ff9d00;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-right {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-right > li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-right > li > a {
+  color: #444;
+}
+
+.container .header .outer .nav .nav-left .shequ > .shequ-list > .list-right > li:hover a {
+  color: #ff9d00;
+}
+
+.container .header .outer .nav .inpt {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 18.5px;
+  width: 127px;
+  height: 34px;
+  line-height: 70px;
+  border-radius: 4px;
+}
+
+.container .header .outer .nav .inpt input {
+  float: left;
+  margin-right: 10px;
+  padding: 0 10px;
+  width: 107px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  background-color: #efefef;
+}
+
+.container .header .outer .nav .inpt span {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/header-sprites13.png) -30px -110px;
+}
+
+.container .header .outer .nav .nav-right {
+  display: flex;
+}
+
+.container .header .outer .nav .nav-right li:nth-of-type(5) {
+  padding: 0;
+}
+
+.container .header .outer .nav .nav-right li:nth-of-type(5) a {
+  padding-left: 10px;
+  border-left: 1px solid #c9c9c9;
+}
+
+.container .header .outer .nav .nav-right li {
+  padding: 0px 10px;
+}
+
+.container .header .outer .nav .nav-right li .line:hover {
+  text-decoration: underline;
+}
+
+.container .header .outer .nav .nav-right li a {
+  color: #ff9d00;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .outer .nav .nav-right li .iconfont {
+  font-size: 25px;
+}
+
+.container .header .outer .nav .nav-right li .iconfont:hover {
+  color: #fff;
+  background-color: #ff9d00;
+  border-radius: 50%;
+}
+
+.container .header .head {
+  position: relative;
+  width: 100%;
+  height: 577px;
+  background-image: url(../images/wKgBZ1l5oNCAYFzmABjvJiS0HQs59.jpeg);
+  background-size: cover;
+}
+
+.container .header .head h1 {
+  position: absolute;
+  left: 30%;
+  bottom: 10px;
+  width: 710px;
+  height: 80px;
+  line-height: 80px;
+  color: #fff;
+  font-size: 26px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .head .ding {
+  position: absolute;
+  left: 75%;
+  bottom: 10px;
+  width: 37px;
+  height: 80px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .head .ding a {
+  display: inline-block;
+  width: 37px;
+  height: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 33px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: url(../images/sprite_v33.png) -293px -236px no-repeat;
+}
+
+.container .header .head .ding span {
+  color: #fff;
+}
+
+.container .header .view-title {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #d7d7d7;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 16;
+}
+
+.container .header .view-title .middle {
+  margin: 0 auto;
+  width: 1000px;
+  height: 80px;
+}
+
+.container .header .view-title .middle .person {
+  float: left;
+  position: relative;
+  padding: 20px 0 0 150px;
+  width: 480px;
+  height: 18px;
+}
+
+.container .header .view-title .middle .person > img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.container .header .view-title .middle .person a {
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .header .view-title .middle .person .p-name {
+  color: #ff7200;
+}
+
+.container .header .view-title .middle .person .p-dengji {
+  color: #ea3c1a;
+  font-family: Verdana, Arial, Helvetica, STHeiti;
+  font-weight: bold;
+}
+
+.container .header .view-title .middle .person span {
+  color: #acacac;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Verdana, Arial, Helvetica, STHeiti;
+}
+
+.container .header .view-title .middle .person span i {
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 14px;
+  background: url(../images/sprite_v33.png) -51px -327px no-repeat;
+}
+
+.container .header .view-title .middle .controls {
+  float: right;
+}
+
+.container .header .view-title .middle .controls li {
+  float: left;
+  padding-top: 15px;
+  width: 120px;
+  height: 65px;
+  border-right: 1px solid #e8e8e6;
+}
+
+.container .header .view-title .middle .controls li a {
+  display: inline-block;
+  width: 120px;
+  height: 55px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+}
+
+.container .header .view-title .middle .controls li .control {
+  margin: 0 37px;
+  width: 46px;
+  height: 46px;
+  background: url(../images/nn_sprite_v25.png) -127px -156px no-repeat;
+}
+
+.container .header .view-title .middle .controls li .collect {
+  margin: 0 47px;
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+  background: url(../images/sprite_v33.png) -240px -576px no-repeat;
+}
+
+.container .header .view-title .middle .controls li .share {
+  margin: 0 47px;
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+  background: url(../images/sprite_v33.png) -269px -576px no-repeat;
+}
+
+.container .header .view-title .middle .controls .c-share {
+  position: relative;
+}
+
+.container .header .view-title .middle .controls .c-share:hover .c-share-list {
+  display: block;
+}
+
+.container .header .view-title .middle .controls .c-share .c-share-list {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 80px;
+  right: 0;
+  padding: 8px 10px;
+  width: 132px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+  border: 1px solid #e8e8e6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container .header .view-title .middle .controls .c-share .c-share-list a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+
+.container .header .view-title .middle .controls .c-share .c-share-list .xinlang {
+  background: #d84c4c url(../images/sprite_v33.png) -295px -569px no-repeat;
+}
+
+.container .header .view-title .middle .controls .c-share .c-share-list .kongjian {
+  background: #3f8bc0 url(../images/sprite_v33.png) -331px -569px no-repeat;
+}
+
+.container .header .view-title .middle .controls .c-share .c-share-list .weixin {
+  background: #73a64f url(../images/sprite_v33.png) -367px -569px no-repeat;
+}
+
+.container .header .none {
+  display: none;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #d7d7d7;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 16;
+}
+
+.container .header .none .middle {
+  margin: 0 auto;
+  width: 1000px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  clear: both;
+}
+
+.container .header .none .middle .m-left {
+  float: left;
+  height: 80px;
+}
+
+.container .header .none .middle .m-left > a {
+  float: left;
+  margin: 21px 10px 0 0;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background: url(../images/nn_sprite_v25.png) -264px -265px;
+}
+
+.container .header .none .middle .m-left span {
+  color: #666;
+}
+
+.container .header .none .middle .m-left span a {
+  color: #ff9d00;
+}
+
+.container .header .none .middle .m-left span a:hover {
+  text-decoration: underline;
+}
+
+.container .header .none .middle .m-right {
+  float: right;
+}
+
+.container .header .none .middle .m-right li {
+  float: left;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #999;
+}
+
+.container .header .none .middle .m-right li a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+}
+
+.container .header .none .middle .m-right li .m-qq {
+  background: url(../images/sprite_v33.png) 0 -607px no-repeat;
+}
+
+.container .header .none .middle .m-right li .m-qq:hover {
+  background: url(../images/sprite_v33.png) 0 -634px no-repeat;
+}
+
+.container .header .none .middle .m-right li .m-xinl {
+  background: url(../images/sprite_v33.png) -27px -607px no-repeat;
+}
+
+.container .header .none .middle .m-right li .m-xinl:hover {
+  background: url(../images/sprite_v33.png) -27px -634px no-repeat;
+}
+
+.container .header .none .middle .m-right li .m-wein {
+  background: url(../images/header-sprites7.png) 0 -165px no-repeat;
+}
+
+.container .header .none .middle .m-right li .m-wein:hover {
+  background: url(../images/header-sprites7.png) -30px -165px no-repeat;
+}
+
+.container .header .none .middle .m-right li .m-login {
+  margin: 0 4px;
+  padding: 0 14px;
+  width: 84px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ffc65a;
+  color: #ff9d00;
+}
+
+.container .header .none .middle .m-right li .m-login:hover {
+  color: #fff;
+  background-color: #ffc65a;
+}
+
+.container .header .none .middle .m-right li .m-reg {
+  margin-left: 4px;
+  padding: 0 14px;
+  width: 48px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ffc65a;
+  color: #ff9d00;
+}
+
+.container .header .none .middle .m-right li .m-reg:hover {
+  color: #fff;
+  background-color: #ffc65a;
+}
+
+.container .section {
+  width: 100%;
+  height: 3000px;
+  margin: 0 auto;
+}
+
+.container .section .middle {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 45px;
+  height: 3000px;
+  clear: both;
+}
+
+.container .section .middle .lf-bar {
+  float: left;
+  width: 680px;
+  height: 100%;
+  background-color: pink;
+}
+
+.container .section .middle .lf-bar .travel-dir {
+  margin-bottom: 60px;
+  width: 680px;
+  height: 58px;
+  border-radius: 5px;
+  border: 1px dashed #d7d7d7;
+  background-color: #fff;
+}
+
+.container .section .middle .lf-bar .travel-dir a {
+  line-height: 58px;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+}
+
+.container .section .middle .lf-bar .travel-dir a span {
+  margin: 0 10px;
+  color: #ff9d00;
+}
+
+.container .section .middle .lf-bar .travel-dir a i {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+}
+
+.container .section .middle .lf-bar .travel-dir a .t-time {
+  background: url(../images/151204sprite1.png) -22px 0px no-repeat;
+}
+
+.container .section .middle .lf-bar .travel-dir a .t-num {
+  background: url(../images/151204sprite1.png) -22px -22px no-repeat;
+}
+
+.container .section .middle .lf-bar .travel-dir a .t-per {
+  background: url(../images/151204sprite1.png) -22px -43px no-repeat;
+}
+
+.container .section .middle .lf-bar p {
+  margin-bottom: 20px;
+  text-indent: 2em;
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #444;
+}
+
+.container .section .middle .lf-bar p a {
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+
+.container .section .middle .lf-bar p .p-link {
+  color: #ffa800;
+  border-bottom: 0;
+}
+
+.container .section .middle .lf-bar p .p-link:hover {
+  text-decoration: underline;
+}
+
+.container .section .middle .lf-bar .img-title {
+  margin-top: 20px;
+  text-indent: 0em;
+}
+
+.container .section .middle .lf-bar .total {
+  overflow: hidden;
+  margin-top: 40px;
+  padding-top: 15px;
+  width: 680px;
+  height: 16px;
+  border-top: 1px solid #e2e2e2;
+  color: #333;
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .lf-bar .total a {
+  float: right;
+  color: #333;
+}
+
+.container .section .middle .rg-bar {
+  float: right;
+  width: 240px;
+  height: 100%;
+}
+
+.container .section .middle .rg-bar .relation {
+  margin-bottom: 12px;
+  width: 240px;
+  height: 18px;
+}
+
+.container .section .middle .rg-bar .relation span {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+}
+
+.container .section .middle .rg-bar .relation span a {
+  margin-left: 10px;
+  color: #ff8a00;
+}
+
+.container .section .middle .rg-bar .relation span a:hover {
+  text-decoration: underline;
+}
+
+.container .section .middle .rg-bar .re-img {
+  position: relative;
+}
+
+.container .section .middle .rg-bar .re-img h3 {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #fff;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .rg-bar .re-num {
+  margin: 20px 0;
+  width: 240px;
+  height: 28px;
+  line-height: 26px;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+}
+
+.container .section .middle .rg-bar .re-num strong {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.container .section .middle .rg-bar .re-num i {
+  float: right;
+  display: inline-block;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/nn_sprite_v22.png) -413px -257px no-repeat;
+}
+
+.container .section .middle .rg-bar .fix .re-add {
+  margin-bottom: 20px;
+  padding: 0 18px;
+  width: 204px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .rg-bar .fix .re-add a {
+  color: #ff8a00;
+}
+
+.container .section .middle .rg-bar .fix .re-add a:hover {
+  text-decoration: underline;
+}
+
+.container .section .middle .rg-bar .fix .re-add i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url(../images/nn_sprite_v22.png) -413px -257px no-repeat;
+}
+
+.container .section .middle .rg-bar .fix .side-title {
+  margin-bottom: 15px;
+  width: 240px;
+  height: 15px;
+  font-size: 16px;
+  line-height: 15px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+}
+
+.container .section .middle .rg-bar .fix .tl-content li {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 30px;
+  width: 210px;
+  height: 40px;
+}
+
+.container .section .middle .rg-bar .fix .tl-content li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  display: inline-block;
+  width: 26px;
+  height: 30px;
+  background: url(../images/notes-medal2.png) no-repeat -269px 0;
+}
+
+.container .section .middle .rg-bar .fix .tl-content li a {
+  display: inline-block;
+  margin-bottom: 3px;
+  width: 210px;
+  height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowarp;
+  font-size: 14px;
+  color: #ff9d00;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .rg-bar .fix .tl-content li span {
+  color: #999;
+  line-height: 17px;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .rg-bar .fix .list {
+  margin-top: 35px;
+}
+
+.container .section .middle .rg-bar .fix .side-list li {
+  margin-bottom: 10px;
+  width: 240px;
+  height: 26px;
+  color: #ccc;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 26px;
+}
+
+.container .section .middle .rg-bar .fix .side-list li a {
+  margin-left: 10px;
+  color: #999;
+}
+
+.container .section .middle .rg-bar .fix .side-list li a:hover {
+  text-decoration: underline;
+}
