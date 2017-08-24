@@ -55,14 +55,16 @@ a {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-.container .middle .main form .form-field {
+.container .middle .main form .form-username,
+.container .middle .main form .form-password {
   margin: 0 25px;
   padding-top: 10px;
   width: 320px;
   height: 42px;
 }
 
-.container .middle .main form .form-field input {
+.container .middle .main form .form-username input,
+.container .middle .main form .form-password input {
   margin: 0 auto;
   display: inline-block;
   padding: 6px 0 6px 12px;
@@ -79,11 +81,31 @@ a {
   box-shadow: 0 0 5px #fff;
 }
 
-.container .middle .main form .form-field input:focus {
+.container .middle .main form .form-username input:focus,
+.container .middle .main form .form-password input:focus {
   border: 1px solid #ffa200;
   box-shadow: 0 0 5px #ffa200;
   outline: none;
   transition: box-shadow 0.25s linear 0s;
+}
+
+.container .middle .main form .link {
+  margin: 0 25px;
+  padding-top: 8px;
+  width: 320px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .middle .main form .link a {
+  float: right;
+  color: #ffa800;
+}
+
+.container .middle .main form .link a:hover {
+  text-decoration: underline;
 }
 
 .container .middle .main form .form-submit {
@@ -113,24 +135,10 @@ a {
 }
 
 .container .middle .main .agreement {
-  margin: 0 25px 25px 25px;
+  margin: 0 25px 0 25px;
   padding-top: 12px;
   width: 320px;
   height: 12px;
-  font-size: 12px;
-  font-weight: normal;
-  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
-  color: #ccc;
-  text-align: right;
-}
-
-.container .middle .main .agreement a {
-  color: #999;
-}
-
-.container .middle .main .agreement a:hover {
-  color: #3f200f;
-  text-decoration: underline;
 }
 
 .container .middle .main .sanfang {
@@ -150,8 +158,21 @@ a {
   height: 84px;
 }
 
-.container .middle .main .style i {
-  margin: 0 20px 5px 10px;
+.container .middle .main .style a {
+  float: left;
+  margin-right: 15px;
+  display: block;
+  width: 62px;
+  height: 84px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #999;
+}
+
+.container .middle .main .style a i {
+  margin: 0 10px 5px 10px;
   display: inline-block;
   width: 42px;
   height: 42px;

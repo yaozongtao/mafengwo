@@ -54,7 +54,8 @@
              border-radius: 5px;
              box-shadow: 0 3px 3px rgba(0, 0, 0, .4);
              form {
-                 .form-field {
+                 .form-username,
+                 .form-password {
                      margin: 0 25px;
                      padding-top: 10px;
                      width: 320px;
@@ -79,6 +80,22 @@
                              box-shadow: 0 0 5px #ffa200;
                              outline: none;
                              transition: box-shadow 0.25s linear 0s;
+                         }
+                     }
+                 }
+                 .link {
+                     margin: 0 25px;
+                     padding-top: 8px;
+                     width: 320px;
+                     height: 16px;
+                     font-size: 12px;
+                     font-weight: normal;
+                     @include font;
+                     a {
+                         float: right;
+                         color: #ffa800;
+                         &:hover {
+                             text-decoration: underline;
                          }
                      }
                  }
@@ -109,22 +126,10 @@
                  }
              }
              .agreement {
-                 margin: 0 25px 25px 25px;
+                 margin: 0 25px 0 25px;
                  padding-top: 12px;
                  width: 320px;
                  height: 12px;
-                 font-size: 12px;
-                 font-weight: normal;
-                 @include font;
-                 color: #ccc;
-                 text-align: right;
-                 a {
-                     color: #999;
-                     &:hover {
-                         color: #3f200f;
-                         text-decoration: underline;
-                     }
-                 }
              }
              .sanfang {
                  padding: 15px 0 20px 24px;
@@ -140,11 +145,23 @@
                  padding-left: 25px;
                  width: 348px;
                  height: 84px;
-                 i {
-                     margin: 0 20px 5px 10px;
-                     display: inline-block;
-                     width: 42px;
-                     height: 42px;
+                 a {
+                     float: left;
+                     margin-right: 15px;
+                     display: block;
+                     width: 62px;
+                     height: 84px;
+                     text-align: center;
+                     font-size: 12px;
+                     font-weight: normal;
+                     @include font;
+                     color: #999;
+                     i {
+                         margin: 0 10px 5px 10px;
+                         display: inline-block;
+                         width: 42px;
+                         height: 42px;
+                     }
                  }
                  .weibo {
                      background: url(../images/c_icon3.gif) 0 0;
