@@ -513,19 +513,18 @@ a {
     }
     .section {
         width: 100%;
-        height: 3000px;
+        height: 100%;
         margin: 0 auto;
         .middle {
             width: 1000px;
             margin: 0 auto;
             margin-top: 45px;
-            height: 3000px;
+            height: 3400px;
             clear: both;
             .lf-bar {
                 float: left;
                 width: 680px;
                 height: 100%;
-                background-color: pink;
                 .travel-dir {
                     margin-bottom: 60px;
                     width: 680px;
@@ -560,7 +559,7 @@ a {
                         }
                     }
                 }
-                p {
+                >p {
                     margin-bottom: 20px;
                     text-indent: 2em;
                     line-height: 28px;
@@ -585,8 +584,8 @@ a {
                     text-indent: 0em;
                 }
                 .total {
-                    overflow:hidden;
-                    margin-top: 40px;
+                    overflow: hidden;
+                    margin: 40px 0 50px 0;
                     padding-top: 15px;
                     width: 680px;
                     height: 16px;
@@ -599,6 +598,65 @@ a {
                         color: #333;
                     }
                 }
+                /*=======评论区start======*/
+                .f-comment {
+                    .com-info {
+                        width: 680px;
+                        height: 48px;
+                        background-color: #f6f6f6;
+                        border-top-left-radius: 24px;
+                        border-bottom-left-radius: 24px;
+                        font-size: 12px;
+                        @include font;
+                        color: #666;
+                        >img {
+                            margin-right: 20px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        >a {
+                            line-height: 48px;
+                            display: inline-block;
+                            margin-right: 6px;
+                            vertical-align: middle;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        .info-name {
+                            color: #ff9d00;
+                        }
+                        .info-dengji {
+                            color: #ef523d;
+                        }
+                        >span {
+                            float: right;
+                            margin-right: 12px;
+                            line-height: 48px;
+                        }
+                    }
+                    .com-content {
+                        margin: 12px 0 0 0;
+                        padding-left: 68px;
+                        width: 612px;
+                        // ==========
+                        height: 100%;
+                        >p {
+                            margin: 5px 0;
+                            color: #999;
+                            font-size: 12px;
+                            @include font;
+                        }
+                        .com-des {
+                            font-size: 14px;
+                        }
+                        .com-time {
+                            margin: 20px 0 30px 0;
+                        }
+                    }
+                }
+                /*=======评论区end========*/
             }
             .rg-bar {
                 float: right;
@@ -752,4 +810,191 @@ a {
             }
         }
     }
+    /*===========页面底部start======*/
+    .footer {
+        padding-bottom: 20px;
+        width: 100%;
+        height: 500px;
+        background-color: #3c3c3c;
+        .middle {
+            margin: 0 auto;
+            width: 1000px;
+            height: 500px;
+            .ft-info {
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 8px 0px;
+                width: 984px;
+                height: 180px;
+                line-height: 22px;
+                font-size: 12px;
+                color: #c2c2c2;
+                @include font;
+                dt {
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                }
+                .plate {
+                    dd {
+                        span,
+                        a {
+                            color: #ff9d00;
+                        }
+                    }
+                }
+                .about-us {
+                    a {
+                        color: #c2c2c2;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                dd:nth-of-type(7) {
+                    a {
+                        color: #ff9d00;
+                        &:hover {
+                            color: #ff9d00;
+                        }
+                    }
+                }
+                .servce {
+                    dt {
+                        text-align: center;
+                    }
+                    dd {
+                        display: flex;
+                        a {
+                            color: #c2c2c2;
+                        }
+                        .ser-left {
+                            li:nth-of-type(6) {
+                                a {
+                                    color: #ff9d00;
+                                }
+                            }
+                        }
+                    }
+                }
+                .twohouse {
+                    display: flex;
+                    dt {
+                        margin-right: 40px;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                    dd {
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .ft-us {
+                margin-top: 22px;
+                padding: 0px 8px 18px;
+                width: 984px;
+                height: 58px;
+                dt {
+                    height: 30px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #c2c2c2;
+                    @include font;
+                }
+                dd {
+                    height: 28px;
+                    text-align: center;
+                    i {
+                        display: inline-block;
+                        width: 28px;
+                        height: 28px;
+                    }
+                    .xinlang {
+                        background: url(../images/mfw-footer-sprite5.png) 0 0;
+                    }
+                    .weibo {
+                        background: url(../images/mfw-footer-sprite5.png) -30px 0;
+                    }
+                    .kongjian {
+                        background: url(../images/mfw-footer-sprite5.png) -60px 0;
+                    }
+                }
+            }
+            .link {
+                padding: 17px 8px;
+                width: 984px;
+                height: 65px;
+                border-top: 1px solid #575a5b;
+                border-bottom: 1px solid #575a5b;
+                a {
+                    display: inline-block;
+                    line-height: 16px;
+                    font-size: 12px;
+                    color: #c2c2c2;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .ft-ft {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 0;
+                width: 1000px;
+                height: 43px;
+                dl {
+                    display: flex;
+                    dt {
+                        margin-right: 20px;
+                        display: inline-block;
+                        width: 136px;
+                        height: 39px;
+                        background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+                    }
+                    dd {
+                        font-size: 12px;
+                        color: #c2c2c2;
+                        line-height: 22px;
+                        p {
+                            a {
+                                color: #c2c2c2;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                            .map {
+                                color: #ff9d00;
+                                &:hover {
+                                    color: #ff9d00;
+                                }
+                            }
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    li {
+                        margin-left: 10px;
+                        width: 90px;
+                        height: 30px;
+                    }
+                    li:nth-of-type(3) {
+                        margin-right: 10px;
+                    }
+                    .chengx {
+                        background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+                    }
+                    .kex {
+                        background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+                    }
+                    .wangx {
+                        background: url(../images/mfw-footer-sprite5.png) 0 -150px;
+                    }
+                }
+            }
+        }
+    }
+    /*===========页面底部end========*/
 }

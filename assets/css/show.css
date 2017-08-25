@@ -12,6 +12,8 @@ a {
 .container {
   margin: 0 auto;
   width: 100%;
+  /*===========页面底部start======*/
+  /*===========页面底部end========*/
 }
 
 .container .header {
@@ -598,7 +600,7 @@ a {
 
 .container .section {
   width: 100%;
-  height: 3000px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -606,7 +608,7 @@ a {
   width: 1000px;
   margin: 0 auto;
   margin-top: 45px;
-  height: 3000px;
+  height: 3400px;
   clear: both;
 }
 
@@ -614,7 +616,8 @@ a {
   float: left;
   width: 680px;
   height: 100%;
-  background-color: pink;
+  /*=======评论区start======*/
+  /*=======评论区end========*/
 }
 
 .container .section .middle .lf-bar .travel-dir {
@@ -658,7 +661,7 @@ a {
   background: url(../images/151204sprite1.png) -22px -43px no-repeat;
 }
 
-.container .section .middle .lf-bar p {
+.container .section .middle .lf-bar > p {
   margin-bottom: 20px;
   text-indent: 2em;
   line-height: 28px;
@@ -668,17 +671,17 @@ a {
   color: #444;
 }
 
-.container .section .middle .lf-bar p a {
+.container .section .middle .lf-bar > p a {
   color: #444;
   border-bottom: 1px solid #444;
 }
 
-.container .section .middle .lf-bar p .p-link {
+.container .section .middle .lf-bar > p .p-link {
   color: #ffa800;
   border-bottom: 0;
 }
 
-.container .section .middle .lf-bar p .p-link:hover {
+.container .section .middle .lf-bar > p .p-link:hover {
   text-decoration: underline;
 }
 
@@ -689,7 +692,7 @@ a {
 
 .container .section .middle .lf-bar .total {
   overflow: hidden;
-  margin-top: 40px;
+  margin: 40px 0 50px 0;
   padding-top: 15px;
   width: 680px;
   height: 16px;
@@ -702,6 +705,71 @@ a {
 .container .section .middle .lf-bar .total a {
   float: right;
   color: #333;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info {
+  width: 680px;
+  height: 48px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #666;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info > img {
+  margin-right: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info > a {
+  line-height: 48px;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info > a:hover {
+  text-decoration: underline;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info .info-name {
+  color: #ff9d00;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info .info-dengji {
+  color: #ef523d;
+}
+
+.container .section .middle .lf-bar .f-comment .com-info > span {
+  float: right;
+  margin-right: 12px;
+  line-height: 48px;
+}
+
+.container .section .middle .lf-bar .f-comment .com-content {
+  margin: 12px 0 0 0;
+  padding-left: 68px;
+  width: 612px;
+  height: 100%;
+}
+
+.container .section .middle .lf-bar .f-comment .com-content > p {
+  margin: 5px 0;
+  color: #999;
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .lf-bar .f-comment .com-content .com-des {
+  font-size: 14px;
+}
+
+.container .section .middle .lf-bar .f-comment .com-content .com-time {
+  margin: 20px 0 30px 0;
 }
 
 .container .section .middle .rg-bar {
@@ -868,4 +936,212 @@ a {
 
 .container .section .middle .rg-bar .fix .side-list li a:hover {
   text-decoration: underline;
+}
+
+.container .footer {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 500px;
+  background-color: #3c3c3c;
+}
+
+.container .footer .middle {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+}
+
+.container .footer .middle .ft-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8px 0px;
+  width: 984px;
+  height: 180px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .footer .middle .ft-info dt {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.container .footer .middle .ft-info .plate dd span,
+.container .footer .middle .ft-info .plate dd a {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info .about-us a {
+  color: #c2c2c2;
+}
+
+.container .footer .middle .ft-info .about-us a:hover {
+  color: #fff;
+}
+
+.container .footer .middle .ft-info dd:nth-of-type(7) a {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info dd:nth-of-type(7) a:hover {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info .servce dt {
+  text-align: center;
+}
+
+.container .footer .middle .ft-info .servce dd {
+  display: flex;
+}
+
+.container .footer .middle .ft-info .servce dd a {
+  color: #c2c2c2;
+}
+
+.container .footer .middle .ft-info .servce dd .ser-left li:nth-of-type(6) a {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info .twohouse {
+  display: flex;
+}
+
+.container .footer .middle .ft-info .twohouse dt {
+  margin-right: 40px;
+}
+
+.container .footer .middle .ft-info .twohouse dt p {
+  text-align: center;
+}
+
+.container .footer .middle .ft-info .twohouse dd p {
+  text-align: center;
+}
+
+.container .footer .middle .ft-us {
+  margin-top: 22px;
+  padding: 0px 8px 18px;
+  width: 984px;
+  height: 58px;
+}
+
+.container .footer .middle .ft-us dt {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .footer .middle .ft-us dd {
+  height: 28px;
+  text-align: center;
+}
+
+.container .footer .middle .ft-us dd i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.container .footer .middle .ft-us dd .xinlang {
+  background: url(../images/mfw-footer-sprite5.png) 0 0;
+}
+
+.container .footer .middle .ft-us dd .weibo {
+  background: url(../images/mfw-footer-sprite5.png) -30px 0;
+}
+
+.container .footer .middle .ft-us dd .kongjian {
+  background: url(../images/mfw-footer-sprite5.png) -60px 0;
+}
+
+.container .footer .middle .link {
+  padding: 17px 8px;
+  width: 984px;
+  height: 65px;
+  border-top: 1px solid #575a5b;
+  border-bottom: 1px solid #575a5b;
+}
+
+.container .footer .middle .link a {
+  display: inline-block;
+  line-height: 16px;
+  font-size: 12px;
+  color: #c2c2c2;
+}
+
+.container .footer .middle .link a:hover {
+  color: #fff;
+}
+
+.container .footer .middle .ft-ft {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 1000px;
+  height: 43px;
+}
+
+.container .footer .middle .ft-ft dl {
+  display: flex;
+}
+
+.container .footer .middle .ft-ft dl dt {
+  margin-right: 20px;
+  display: inline-block;
+  width: 136px;
+  height: 39px;
+  background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+}
+
+.container .footer .middle .ft-ft dl dd {
+  font-size: 12px;
+  color: #c2c2c2;
+  line-height: 22px;
+}
+
+.container .footer .middle .ft-ft dl dd p a {
+  color: #c2c2c2;
+}
+
+.container .footer .middle .ft-ft dl dd p a:hover {
+  color: #fff;
+}
+
+.container .footer .middle .ft-ft dl dd p .map {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-ft dl dd p .map:hover {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-ft ul {
+  display: flex;
+}
+
+.container .footer .middle .ft-ft ul li {
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.container .footer .middle .ft-ft ul li:nth-of-type(3) {
+  margin-right: 10px;
+}
+
+.container .footer .middle .ft-ft ul .chengx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+}
+
+.container .footer .middle .ft-ft ul .kex {
+  background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+}
+
+.container .footer .middle .ft-ft ul .wangx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -150px;
 }
