@@ -230,7 +230,6 @@ a {
   z-index: 0;
   width: 100%;
   height: 576px;
-  border: 1px solid red;
   /*=====ppt主图部分start====*/
   /*=======ppt主图部分end=====*/
   /*=======ppt侧边缩略图部分start======*/
@@ -240,6 +239,7 @@ a {
 }
 
 .ppt .ppt-main {
+  position: relative;
   /*======PPT文字部分end====*/
 }
 
@@ -248,8 +248,11 @@ a {
 }
 
 .ppt .ppt-main li {
-  position: relative;
   display: none;
+  /*==============*/
+  position: absolute;
+  left: 0;
+  right: 0;
   /*======PPT文字部分start====*/
 }
 
@@ -297,6 +300,14 @@ a {
   position: absolute;
   top: 60px;
   left: 91%;
+}
+
+.ppt .pptsider-bar img {
+  border: 2px solid transparent;
+}
+
+.ppt .pptsider-bar .pactive {
+  border: 2px solid #ff9d00;
 }
 
 .ppt .pptsider-bar .more {
@@ -404,7 +415,7 @@ a {
 
 .section .section-left {
   width: 260px;
-  height: 800px;
+  height: 100%;
   /*=====广告位start=====*/
   /*=====广告位end=====*/
 }
@@ -504,6 +515,10 @@ a {
   background-color: #ff9d00;
 }
 
+.section .section-left .section-ppt .section-btn li .btnactive {
+  background-color: #ff9d00;
+}
+
 .section .section-left .city .qingdao {
   display: flex;
   justify-content: space-between;
@@ -560,45 +575,61 @@ a {
   color: #ff8a00;
 }
 
-.section .section-left .activity {
+.section .section-left .outer {
+  position: relative;
+  width: 270px;
+  height: 390px;
+  overflow: hidden;
+}
+
+.section .section-left .outer:hover .line {
+  display: block;
+}
+
+.section .section-left .outer .line {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 5px;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.section .section-left .outer .activity-list {
   overflow: scroll;
   overflow-x: hidden;
-  scrollbar-width: 10px;
-  scrollbar-3d-light-color: #fff;
-  width: 260px;
+  width: 285px;
   height: 390px;
 }
 
-.section .section-left .activity img {
-  margin-right: 8px;
-}
-
-.section .section-left .activity ul li {
+.section .section-left .outer .activity-list li {
   padding: 5px;
   width: 250px;
   height: 40px;
 }
 
-.section .section-left .activity ul li > a {
+.section .section-left .outer .activity-list li > a {
   display: flex;
   font-size: 0;
   line-height: 20px;
 }
 
-.section .section-left .activity ul li > a dl dt {
+.section .section-left .outer .activity-list li > a img {
+  margin-right: 8px;
+}
+
+.section .section-left .outer .activity-list li > a dl dt {
   font-size: 14px;
   color: #ff9d00;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
-.section .section-left .activity ul li > a dl dd {
+.section .section-left .outer .activity-list li > a dl dd {
   font-size: 12px;
   color: #666;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
-}
-
-.section .section-left .section-head span a {
-  color: #666;
 }
 
 .section .section-left .join-us ul {
@@ -661,7 +692,7 @@ a {
 
 .section .section-right {
   width: 700px;
-  height: 800px;
+  height: 100%;
   /*=====页脚start====*/
   /*======页脚end=====*/
 }

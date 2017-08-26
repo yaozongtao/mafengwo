@@ -202,15 +202,18 @@ a {
     z-index: 0;
     width: 100%;
     height: 576px;
-    border: 1px solid red;
     /*=====ppt主图部分start====*/
     .ppt-main {
+        position: relative;
         li:nth-of-type(1) {
             display: block;
         }
         li {
-            position: relative;
             display: none;
+            /*==============*/
+            position: absolute;
+            left: 0;
+            right: 0;
             .from {
                 position: absolute;
                 left: 31%;
@@ -254,6 +257,12 @@ a {
         position: absolute;
         top: 60px;
         left: 91%;
+        img {
+            border: 2px solid transparent;
+        }
+        .pactive {
+            border: 2px solid #ff9d00;
+        }
         .more {
             margin-top: 15px;
             width: 110px;
@@ -356,7 +365,8 @@ a {
     height: 2600px;
     .section-left {
         width: 260px;
-        height: 800px;
+        height: 100%;
+        
         /*=====广告位start=====*/
         .section-ad {
             margin-top: 20px;
@@ -436,6 +446,9 @@ a {
                     &:hover {
                         background-color: #ff9d00;
                     }
+                    .btnactive {
+                        background-color: #ff9d00;
+                    }
                 }
             }
         }
@@ -495,21 +508,39 @@ a {
                 }
             }
         }
-        .activity {
-            overflow: scroll;
-            overflow-x: hidden;
-            scrollbar-width: 10px;
-            scrollbar-3d-light-color: #fff;
-            width: 260px;
-            height: 390px;
-            img {
-                margin-right: 8px;
+        .outer{
+            position: relative;;
+            width:270px;
+            height:390px;
+            overflow: hidden;
+           &:hover{
+                .line{
+                    display:block;
+                }
+           }
+            .line{
+                display:none;
+                position: absolute;
+                top:0;
+                right: 2px;
+                width:5px;
+                height:200px;
+                background-color: #ddd;
+                border-radius: 5px;
             }
-            ul li {
+            .activity-list {
+            overflow: scroll;
+            overflow-x:hidden;
+            width: 285px;
+            height: 390px;
+            li {
                 padding: 5px;
                 width: 250px;
                 height: 40px;
                 >a {
+                    img {
+                        margin-right: 8px;
+                    }
                     display: flex;
                     font-size: 0;
                     line-height: 20px;
@@ -525,14 +556,9 @@ a {
                     }
                 }
             }
-        }
-        .section-head {
-            span {
-                a {
-                    color: #666;
-                }
             }
         }
+        
         .join-us {
             ul {
                 width: 260px;
@@ -589,7 +615,8 @@ a {
     }
     .section-right {
         width: 700px;
-        height: 800px;
+        height: 100%;
+       
         .sidebar-ad {
             margin: 20px 0px;
         }

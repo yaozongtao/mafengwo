@@ -1,0 +1,547 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  /*=========头部导航start=======*/
+  /*=========头部导航end=========*/
+}
+
+.container .outer {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+.container .outer .nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 1010px;
+  height: 70px;
+  line-height: 70px;
+  /*========搜索框start======*/
+  /*========搜索框end======*/
+}
+
+.container .outer .nav .nav-left {
+  display: flex;
+}
+
+.container .outer .nav .nav-left .logon {
+  margin-top: 20px;
+  margin-right: 24px;
+  width: 136px;
+  height: 39px;
+  background: url(../images/header-sprites13.png) no-repeat 0 0;
+}
+
+.container .outer .nav .nav-left > li:nth-of-type(1) {
+  padding: 0;
+}
+
+.container .outer .nav .nav-left > li {
+  padding: 0px 14px;
+}
+
+.container .outer .nav .nav-left > li:hover {
+  color: #ff9d00;
+  border-bottom: 2px solid #ff9d00;
+}
+
+.container .outer .nav .nav-left > li:hover > a {
+  color: #ff9d00;
+}
+
+.container .outer .nav .nav-left > li > a {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .outer .nav .nav-left .shop {
+  position: relative;
+}
+
+.container .outer .nav .nav-left .shop:hover {
+  border-bottom: 0;
+  border-top: 2px solid #ff9d00;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.container .outer .nav .nav-left .shop:hover .shop-list {
+  display: block;
+}
+
+.container .outer .nav .nav-left .shop .shop-list {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  padding: 0;
+  background: #eee;
+}
+
+.container .outer .nav .nav-left .shop .shop-list li {
+  padding: 0px 10px 0px;
+  width: 124px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.container .outer .nav .nav-left .shop .shop-list li:hover {
+  border-bottom: 0;
+  background: #ddd;
+}
+
+.container .outer .nav .nav-left .shop .shop-list li:hover a {
+  color: #444;
+}
+
+.container .outer .nav .nav-left .shop .shop-list li a {
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .outer .nav .nav-left .shop .shop-list li a .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.container .outer .nav .nav-left .shop .shop-list li a .new {
+  color: skyblue;
+  font-size: 35px;
+}
+
+.container .outer .nav .nav-left .shequ {
+  position: relative;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .outer .nav .nav-left .shequ:hover {
+  border-bottom: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid #ff9d00;
+}
+
+.container .outer .nav .nav-left .shequ:hover > .shequ-list {
+  display: block;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-left {
+  float: left;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-left > li {
+  margin-left: 15px;
+  height: 75px;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > .hot {
+  color: red;
+  font-size: 30px;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > .new {
+  color: skyblue;
+  font-size: 30px;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > a {
+  font-size: 16px;
+  color: #444;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-left > li > a:hover {
+  color: #ff9d00;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-right {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-right > li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-right > li > a {
+  color: #444;
+}
+
+.container .outer .nav .nav-left .shequ > .shequ-list > .list-right > li:hover a {
+  color: #ff9d00;
+}
+
+.container .outer .nav .inpt {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 18.5px;
+  width: 127px;
+  height: 34px;
+  line-height: 70px;
+  border-radius: 4px;
+}
+
+.container .outer .nav .inpt input {
+  float: left;
+  margin-right: 10px;
+  padding: 0 10px;
+  width: 107px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  background-color: #efefef;
+}
+
+.container .outer .nav .inpt span {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/header-sprites13.png) -30px -110px;
+}
+
+.container .outer .nav .nav-right {
+  display: flex;
+}
+
+.container .outer .nav .nav-right li:nth-of-type(5) {
+  padding: 0;
+}
+
+.container .outer .nav .nav-right li:nth-of-type(5) a {
+  padding-left: 10px;
+  border-left: 1px solid #c9c9c9;
+}
+
+.container .outer .nav .nav-right li {
+  padding: 0px 10px;
+}
+
+.container .outer .nav .nav-right li .line:hover {
+  text-decoration: underline;
+}
+
+.container .outer .nav .nav-right li a {
+  color: #ff9d00;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .outer .nav .nav-right li .iconfont {
+  font-size: 25px;
+}
+
+.container .outer .nav .nav-right li .iconfont:hover {
+  color: #fff;
+  background-color: #ff9d00;
+  border-radius: 50%;
+}
+
+.container .sale-head {
+  position: relative;
+  height: 560px;
+  margin: 0 auto;
+  background: url(../images/wKgBZ1maWJeAWndkAASW-1emfX4718.png) center center;
+}
+
+.container .sale-head .top-bar {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 220px;
+  width: 660px;
+  height: 52px;
+  font-size: 0;
+  background: url(../images/wKgBZ1maf_mAZF-FAAATCyB_PbI999.png);
+}
+
+.container .sale-head .top-bar > span {
+  display: inline-block;
+  padding: 6px 0;
+  width: 220px;
+  height: 40px;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+}
+
+.container .sale-head .top-bar > span:nth-of-type(2) {
+  color: #ffe824;
+}
+
+.container .sale-head .top-bar .top-share {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 290px;
+  height: 50px;
+  background-color: green;
+}
+
+.container .sale-head .top-bar .top-share span {
+  width: 60px;
+  height: 50px;
+}
+
+.container .sale-head .top-bar .top-share i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.container .sale-head .top-bar .top-share .weixing {
+  background: url(../images/share.png) 0 0;
+}
+
+.container .sale-head .top-bar .top-share .xinlang {
+  background: url(../images/share.png) 0 -30px;
+}
+
+.container .sale-head .lingquan {
+  position: absolute;
+  z-index: 9;
+  top: 420px;
+  left: 322px;
+  margin: 0 auto;
+  width: 1087px;
+  height: 315px;
+  background: url(../images/wKgBZ1mTuG2Abbq4AANOs6t1NbY089.png);
+}
+
+.container .sale-head .lingquan .xu {
+  display: inline-block;
+  width: 132px;
+  height: 36px;
+}
+
+.container .sale-head .lingquan .ling {
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  background: url(../images/wKgBZ1mTtl2AfVkoAAAzt9KJo40839.png) 0 0;
+}
+
+.container .sale-head .lingquan .you {
+  position: absolute;
+  top: 45px;
+  left: 642px;
+  background: url(../images/wKgBZ1mTtl2AfVkoAAAzt9KJo40839.png) 0 -32px;
+}
+
+.container .sale-head .lingquan .btn {
+  display: inline-block;
+  width: 154px;
+  height: 60px;
+}
+
+.container .sale-head .lingquan .change {
+  position: absolute;
+  top: 90px;
+  left: 400px;
+  background: url(../images/wKgBZ1mTtl2AfVkoAAAzt9KJo40839.png) -448px -2px;
+}
+
+.container .sale-head .lingquan .buy {
+  position: absolute;
+  top: 180px;
+  left: 400px;
+  background: url(../images/wKgBZ1mTtl2AfVkoAAAzt9KJo40839.png) -297px -2px;
+}
+
+.container .sale-head .lingquan .start {
+  position: absolute;
+  top: 160px;
+  left: 770px;
+  background: url(../images/wKgBZ1mTtl2AfVkoAAAzt9KJo40839.png) -132px -2px;
+}
+
+.container .sale-head .lingquan div {
+  width: 80px;
+  height: 64px;
+}
+
+.container .sale-head .lingquan .shitou {
+  position: absolute;
+  top: 140px;
+  left: 680px;
+  background: url(../images/wKgBZ1mT_gOAFR1IAADDyeBj9oQ720.png) -10px 0;
+  background-size: 257px 128px;
+}
+
+.container .sale-head .lingquan .bu {
+  position: absolute;
+  top: 140px;
+  left: 930px;
+  background: url(../images/wKgBZ1mT_gOAFR1IAADDyeBj9oQ720.png) -10px -64px;
+  background-size: 257px 128px;
+}
+
+.container .section {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 1730px;
+  height: 5300px;
+  background-color: #ff5476;
+}
+
+.container .section .middle {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container .section .middle .zhuangchang {
+  padding: 180px 30px 0 30px;
+  width: 960px;
+  height: 348px;
+  clear: both;
+}
+
+.container .section .middle .zhuangchang li {
+  float: left;
+  padding: 8px 6px;
+  width: 464px;
+  height: 158px;
+}
+
+.container .section .middle img {
+  margin: 0 auto;
+}
+
+.container .section .middle .hot-con {
+  padding-bottom: 24px;
+  width: 994px;
+  height: 612px;
+  border: 3px solid #097;
+  border-radius: 8px;
+  background-color: #f6d038;
+}
+
+.container .section .middle .hot-con .hot-top {
+  width: 995px;
+  height: 330px;
+  background-color: pink;
+}
+
+.container .section .middle .hot-con .hot-top .am {
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  width: 244px;
+  height: 40px;
+  background: url(../images/sprite-721.png) 0 -90px;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list {
+  padding: 0 17px;
+  width: 960px;
+  height: 274px;
+  background-color: green;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li {
+  float: left;
+  width: 240px;
+  height: 274px;
+  background-color: #ddd;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a > div {
+  margin: 5px;
+  padding: 8px;
+  width: 214px;
+  height: 111px;
+  background-color: yellow;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-top {
+  padding-bottom: 10px;
+  width: 213px;
+  height: 45px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #181818;
+  display: inline-block;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-top > img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-bon {
+  position: relative;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-bon i {
+  display: inline-block;
+  width: 47px;
+  height: 17px;
+  background: url(../images/sprite-721.png);
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-bon p {
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #959595;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-bon p span {
+  text-decoration: line-through;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-bon p strong {
+  font-size: 28px;
+  font-family: "Tahoma";
+  color: #f6604d;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list li a .j-bon .btn-soon {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fc9d27;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+  border-radius: 4px;
+}
