@@ -14,6 +14,8 @@ a {
   margin: 0 auto;
   /*=========头部导航start=======*/
   /*=========头部导航end=========*/
+  /*===========页面底部start======*/
+  /*===========页面底部end========*/
 }
 
 .container .outer {
@@ -412,7 +414,7 @@ a {
   margin: 0 auto;
   padding-bottom: 100px;
   width: 1730px;
-  height: 5300px;
+  height: 5100px;
   background-color: #ff5476;
 }
 
@@ -452,7 +454,6 @@ a {
 .container .section .middle .hot-con .hot-top {
   width: 995px;
   height: 330px;
-  background-color: pink;
 }
 
 .container .section .middle .hot-con .hot-top .am {
@@ -468,71 +469,75 @@ a {
   padding: 0 17px;
   width: 960px;
   height: 274px;
-  background-color: green;
 }
 
 .container .section .middle .hot-con .hot-top .pro-list li {
   float: left;
   width: 240px;
   height: 274px;
-  background-color: #ddd;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a > div {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa {
   margin: 5px;
   padding: 8px;
   width: 214px;
   height: 111px;
-  background-color: yellow;
+  background-color: #fff;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-top {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .country {
   padding-bottom: 10px;
-  width: 213px;
-  height: 45px;
+  width: 100%;
+  height: 46px;
   border-bottom: 1px solid #e5e5e5;
   font-size: 16px;
-  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 46px;
   color: #181818;
-  display: inline-block;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-top > img {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .country img {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-bon {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .price {
   position: relative;
+  margin-top: 4px;
+  width: 134px;
+  height: 53px;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-bon i {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .price i {
   display: inline-block;
+  margin-right: 3px;
   width: 47px;
   height: 17px;
-  background: url(../images/sprite-721.png);
+  background: url(../images/sprite-721.png) no-repeat;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-bon p {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .price p {
   font-size: 16px;
-  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-family: "Helvetica";
+  line-height: 18px;
   color: #959595;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-bon p span {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .price p span {
   text-decoration: line-through;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-bon p strong {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .price p strong {
   font-size: 28px;
   font-family: "Tahoma";
+  font-weight: normal;
   color: #f6604d;
 }
 
-.container .section .middle .hot-con .hot-top .pro-list li a .j-bon .btn-soon {
+.container .section .middle .hot-con .hot-top .pro-list .list-first .visa .price .btn-soon {
   position: absolute;
-  right: 8px;
+  right: -80px;
   bottom: 8px;
   display: inline-block;
   width: 80px;
@@ -540,8 +545,993 @@ a {
   line-height: 30px;
   text-align: center;
   background-color: #fc9d27;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-size: 16px;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in {
+  margin: 5px;
+  width: 230px;
+  height: 264px;
+  font-size: 0;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info {
+  padding: 8px 12px 0 12px;
+  width: 206px;
+  height: 110px;
+  background-color: #fff;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info h6 {
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #181818;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info .price {
+  position: relative;
+  margin-top: 9px;
+  width: 116px;
+  height: 56px;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info .price p {
+  font-size: 16px;
+  font-family: "Helvetica";
+  line-height: 18px;
+  color: #959595;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info .price p i {
+  display: inline-block;
+  margin-right: 3px;
+  width: 47px;
+  height: 17px;
+  background: url(../images/sprite-721.png) no-repeat;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info .price p span {
+  text-decoration: line-through;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info .price p strong {
+  font-size: 28px;
+  font-family: "Tahoma";
+  font-weight: normal;
+  color: #f6604d;
+}
+
+.container .section .middle .hot-con .hot-top .pro-list .list-in .i-info .price .btn-soon {
+  position: absolute;
+  right: -85px;
+  bottom: 8px;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fc9d27;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-size: 16px;
+}
+
+.container .section .middle .hot-con .hot-bottom {
+  width: 995px;
+  height: 234px;
+}
+
+.container .section .middle .hot-con .hot-bottom .pm {
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  width: 244px;
+  height: 40px;
+  background: url(../images/sprite-721.png) 0 -137px;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list {
+  margin: 0 auto;
+  width: 960px;
+  height: 178px;
+  clear: both;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li {
+  float: left;
+  margin: 5px;
+  padding: 8px;
+  width: 454px;
+  height: 152px;
+  background-color: #fff;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li img {
+  float: left;
+  margin-right: 10px;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info {
+  float: left;
+  padding-top: 12px;
+  width: 222px;
+  height: 122px;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info h6 {
+  margin-bottom: 28px;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #181818;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info .price {
+  position: relative;
+  margin-top: 9px;
+  width: 116px;
+  height: 56px;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info .price p {
+  font-size: 16px;
+  font-family: "Helvetica";
+  line-height: 18px;
+  color: #959595;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info .price p i {
+  display: inline-block;
+  margin-right: 3px;
+  width: 47px;
+  height: 17px;
+  background: url(../images/sprite-721.png) no-repeat;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info .price p span {
+  text-decoration: line-through;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info .price p strong {
+  font-size: 28px;
+  font-family: "Tahoma";
+  font-weight: normal;
+  color: #f6604d;
+}
+
+.container .section .middle .hot-con .hot-bottom .bot-list li .i-info .price .btn-soon {
+  position: absolute;
+  right: -85px;
+  bottom: 8px;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fc9d27;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  font-size: 16px;
+}
+
+.container .section .middle .luck {
+  margin: 25px 10px;
+}
+
+.container .section .middle .area-con {
+  padding: 28px 0;
+  width: 994px;
+  height: 196px;
+  background-color: #ff983c;
+  border: 3px solid #097;
+  border-radius: 8px;
+  clear: both;
+}
+
+.container .section .middle .area-con li {
+  float: left;
+}
+
+.container .section .middle .area-con .free-order {
+  margin: 0 auto;
+  width: 980px;
+  height: 196px;
+}
+
+.container .section .middle .area-con .free-order .free-name {
+  margin: 0 6px;
+  padding: 0 8px;
+  width: 164px;
+  height: 192px;
+  border: 2px solid #bc8261;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.container .section .middle .area-con .free-order .free-name .p1 {
+  padding-top: 12px;
+  width: 164px;
+  height: 74px;
+  font-size: 12px;
+  color: #6b3113;
+  line-height: 22px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .area-con .free-order .free-name .p1 img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container .section .middle .area-con .free-order .free-name a {
+  display: inline-block;
+  margin-top: 6px;
+  width: 164px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #1a9ffc;
+}
+
+.container .section .middle .area-con .free-order .free-name .p2 {
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #181818;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .area-con .free-order .free-name .p2 .outer {
+  color: #f26252;
+}
+
+.container .section .middle .area-con .free-order .free-name .p2 .outer .inner {
+  font-size: 22px;
+}
+
+.container .section .middle .area-con .free-order .free-time {
+  position: relative;
+  margin: 0 6px;
+  width: 178px;
+  height: 190px;
+  border: 3px solid #fff655;
+  border-radius: 4px;
+}
+
+.container .section .middle .area-con .free-order .free-time p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 75px 0;
+  width: 178px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffca3c;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .diff {
+  position: relative;
+  width: 1000px;
+  height: 58px;
+}
+
+.container .section .middle .diff a {
+  display: inline-block;
+}
+
+.container .section .middle .diff .bower {
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  width: 152px;
+  height: 58px;
+  background: url(../images/tab-e.png) 0 -74px;
+  font-size: 18px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #c2ddff;
+  line-height: 50px;
+  text-indent: 18px;
+}
+
+.container .section .middle .diff .like {
+  position: absolute;
+  top: 5px;
+  left: 104px;
+  z-index: 2;
+  width: 142px;
+  height: 58px;
+  background: url(../images/tab-e.png) 0 0;
+  font-size: 20px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+  line-height: 60px;
+  text-indent: 22px;
+}
+
+.container .section .middle .diff-info {
+  position: relative;
+  z-index: 4;
+  width: 944px;
+  height: 86px;
+  line-height: 86px;
+  background-color: #358cff;
+  border: 3px solid #097;
+  border-radius: 8px;
+}
+
+.container .section .middle .diff-info p {
+  display: inline-block;
+  margin: 0 15px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #f8c82e;
+}
+
+.container .section .middle .diff-info > div {
+  display: inline-block;
+  margin-right: 50px;
+  width: 214px;
+  height: 38px;
+  border: 1px solid #7ae4ff;
+  background-color: #0275b0;
+  border-radius: 2px;
   font-size: 16px;
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
   color: #fff;
+  line-height: 38px;
+  text-indent: 42px;
+}
+
+.container .section .middle .diff-info .start-point {
+  position: relative;
+}
+
+.container .section .middle .diff-info .start-point:hover i {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.container .section .middle .diff-info .start-point:hover .start-list {
+  display: block;
+}
+
+.container .section .middle .diff-info .start-point i {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-block;
+  width: 19px;
+  height: 10px;
+  background: url(../images/sprite-721.png) -108px -11px;
+}
+
+.container .section .middle .diff-info .start-point .start-list {
+  display: none;
+  position: absolute;
+  z-index: 7;
+  top: 38px;
+  left: 0;
+  width: 213px;
+  border-left: 1px solid #7ae4ff;
+  border-right: 1px solid #7ae4ff;
+  border-bottom: 1px solid #7ae4ff;
+  background-color: #0275b0;
+  border-radius: 2px;
+}
+
+.container .section .middle .diff-info .start-point .start-list > li {
+  width: 214px;
+  height: 38px;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 38px;
+  text-indent: 42px;
+}
+
+.container .section .middle .diff-info .start-point .start-list > li a {
+  color: #fff;
+}
+
+.container .section .middle .diff-info .go {
+  margin-right: 0;
+  width: 188px;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 0px;
+  text-align: center;
+  border: 2px solid #005064;
+  border-radius: 3px;
+  background-color: #fed034;
+  font-size: 24px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #035681;
+}
+
+.container .section .middle .visa {
+  width: 1000px;
+  height: 401px;
+  background-color: #358cff;
+  border: 3px solid #d1183c;
+  border-radius: 8px;
+}
+
+.container .section .middle .visa .v-nav {
+  width: 100%;
+  height: 46px;
+  clear: both;
+}
+
+.container .section .middle .visa .v-nav .v-active {
+  background-color: #ffd210;
+  color: #371900;
+}
+
+.container .section .middle .visa .v-nav > a {
+  float: left;
+  display: inline-block;
+  width: 125px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #00bc8f;
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .visa .v-nav > a:hover {
+  background-color: #ffd210;
+  color: #371900;
+}
+
+.container .section .middle .visa .v-content {
+  margin: 0 auto;
+  padding: 12px 3px 16px;
+  width: 988px;
+  height: 322px;
+}
+
+.container .section .middle .visa .v-content .box-list {
+  width: 988px;
+  height: 256px;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box {
+  float: left;
+  position: relative;
+  margin: 8px;
+  padding: 10px 14px 14px;
+  width: 285px;
+  height: 88px;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box h6 {
+  margin-bottom: 2px;
+  height: 42px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #181818;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box h6 > span {
+  display: inline-block;
+  margin-right: 3px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 2px;
+  line-height: 21px;
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  background-color: #8782f9;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box .price {
+  margin-top: 2px;
+  width: 116px;
+  height: 29px;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #959595;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box .price strong {
+  font-size: 28px;
+  font-family: "Tahoma";
+  font-weight: normal;
+  color: #f6604d;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box .honey {
+  margin-top: 3px;
+  width: 102px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #fc5e52;
+  border-radius: 10px;
+  background-color: #fee9eb;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box .honey a {
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .visa .v-content .box-list .v-box .buy {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fc5e52;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+}
+
+.container .section .middle .visa .v-content .btn-more {
+  margin: 0 auto;
+  margin-top: 16px;
+  width: 385px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #fcdfa3;
+  border: 2px solid #1d76f1;
+  box-shadow: inset 0 -5px 0 0 #ff6f2c;
+  border-radius: 8px;
+  color: #b63700;
+  font-size: 18px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .ship-nav {
+  width: 994px;
+  height: 46px;
+  border-color: #c51539;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 3px solid #045ccb;
+  border-bottom: 0;
+  font-size: 0;
+}
+
+.container .section .middle .ship-nav .s-active {
+  color: #092955;
+  background-color: #ffd210;
+}
+
+.container .section .middle .ship-nav > a {
+  display: inline-block;
+  width: 331px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #2f9be7;
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .ship-nav > a:hover {
+  color: #092955;
+  background-color: #ffd210;
+}
+
+.container .section .middle .ship-con {
+  padding: 12px 3px 16px;
+  width: 988px;
+  height: 626px;
+  background-color: #72e4ff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 3px solid #045ccb;
+  border-top: 0;
+}
+
+.container .section .middle .ship-con .ship-list {
+  margin: 0 auto;
+  width: 984px;
+  height: 560px;
+  clear: both;
+}
+
+.container .section .middle .ship-con .btn-more {
+  margin: 0 auto;
+  margin-top: 16px;
+  width: 385px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #fcdfa3;
+  border: 2px solid #1d76f1;
+  box-shadow: inset 0 -5px 0 0 #ff6f2c;
+  border-radius: 8px;
+  color: #b63700;
+  font-size: 18px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .ship {
+  float: left;
+  position: relative;
+  margin: 12px 8px;
+  width: 230px;
+  height: 260px;
+  background-color: #fff;
+}
+
+.container .section .middle .ship .des {
+  padding: 8px 12px 0;
+  width: 206px;
+  height: 98px;
+}
+
+.container .section .middle .ship .des h6 {
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #181818;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .section .middle .ship .des .price {
+  margin-top: 2px;
+  width: 116px;
+  height: 30px;
+  font-size: 16px;
+  color: #959595;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .ship .des .price strong {
+  font-size: 28px;
+  font-family: "Tahoma";
+  font-weight: normal;
+  color: #f6604d;
+}
+
+.container .section .middle .ship .des .honey {
+  margin-top: 4px;
+  width: 102px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #fc5e52;
+  border-radius: 10px;
+  background-color: #fee9eb;
+  color: #f60;
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .section .middle .ship .des .app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 0 10px;
+  width: 91px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #409ae0;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+}
+
+.container .section .middle .ship .des .buy {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  display: inline-block;
+  width: 80px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fc5e52;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+}
+
+.container .section .middle .sea {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 24px 12px;
+  width: 970px;
+  height: 256px;
+  background-color: #7ae4ff;
+  border: 3px solid #045ccb;
+  border-radius: 8px;
+  clear: both;
+}
+
+.container .section .middle .sea .left {
+  position: absolute;
+  top: 35%;
+  left: -47px;
+  width: 44px;
+  height: 81px;
+  background: url(../images/sprite-721.png) 0 -495px;
+}
+
+.container .section .middle .sea .right {
+  position: absolute;
+  top: 35%;
+  right: -47px;
+  width: 44px;
+  height: 81px;
+  background: url(../images/sprite-721.png) -58px -495px;
+}
+
+.container .section .middle .sea img {
+  float: left;
+  margin-right: 12px;
+}
+
+.container .section .middle .sea .show {
+  float: left;
+  width: 654px;
+  height: 256px;
+  overflow: hidden;
+}
+
+.container .section .middle .sea .show .sea-list {
+  float: left;
+  width: 970px;
+  height: 256px;
+  background-color: pink;
+}
+
+.container .section .middle .sea .show .sea-list .ship {
+  margin: 0;
+  margin-right: 12px;
+}
+
+.container .footer {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 500px;
+  background-color: #3c3c3c;
+}
+
+.container .footer .middle {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+}
+
+.container .footer .middle .ft-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8px 0px;
+  width: 984px;
+  height: 180px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .footer .middle .ft-info dt {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.container .footer .middle .ft-info .plate dd span,
+.container .footer .middle .ft-info .plate dd a {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info .about-us a {
+  color: #c2c2c2;
+}
+
+.container .footer .middle .ft-info .about-us a:hover {
+  color: #fff;
+}
+
+.container .footer .middle .ft-info dd:nth-of-type(7) a {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info dd:nth-of-type(7) a:hover {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info .servce dt {
+  text-align: center;
+}
+
+.container .footer .middle .ft-info .servce dd {
+  display: flex;
+}
+
+.container .footer .middle .ft-info .servce dd a {
+  color: #c2c2c2;
+}
+
+.container .footer .middle .ft-info .servce dd .ser-left li:nth-of-type(6) a {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-info .twohouse {
+  display: flex;
+}
+
+.container .footer .middle .ft-info .twohouse dt {
+  margin-right: 40px;
+}
+
+.container .footer .middle .ft-info .twohouse dt p {
+  text-align: center;
+}
+
+.container .footer .middle .ft-info .twohouse dd p {
+  text-align: center;
+}
+
+.container .footer .middle .ft-us {
+  margin-top: 22px;
+  padding: 0px 8px 18px;
+  width: 984px;
+  height: 58px;
+}
+
+.container .footer .middle .ft-us dt {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #c2c2c2;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .footer .middle .ft-us dd {
+  height: 28px;
+  text-align: center;
+}
+
+.container .footer .middle .ft-us dd i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.container .footer .middle .ft-us dd .xinlang {
+  background: url(../images/mfw-footer-sprite5.png) 0 0;
+}
+
+.container .footer .middle .ft-us dd .weibo {
+  background: url(../images/mfw-footer-sprite5.png) -30px 0;
+}
+
+.container .footer .middle .ft-us dd .kongjian {
+  background: url(../images/mfw-footer-sprite5.png) -60px 0;
+}
+
+.container .footer .middle .link {
+  padding: 17px 8px;
+  width: 984px;
+  height: 65px;
+  border-top: 1px solid #575a5b;
+  border-bottom: 1px solid #575a5b;
+}
+
+.container .footer .middle .link a {
+  display: inline-block;
+  line-height: 16px;
+  font-size: 12px;
+  color: #c2c2c2;
+}
+
+.container .footer .middle .link a:hover {
+  color: #fff;
+}
+
+.container .footer .middle .ft-ft {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 1000px;
+  height: 43px;
+}
+
+.container .footer .middle .ft-ft dl {
+  display: flex;
+}
+
+.container .footer .middle .ft-ft dl dt {
+  margin-right: 20px;
+  display: inline-block;
+  width: 136px;
+  height: 39px;
+  background: url(../images/mfw-footer-sprite5.png) 0 -30px;
+}
+
+.container .footer .middle .ft-ft dl dd {
+  font-size: 12px;
+  color: #c2c2c2;
+  line-height: 22px;
+}
+
+.container .footer .middle .ft-ft dl dd p a {
+  color: #c2c2c2;
+}
+
+.container .footer .middle .ft-ft dl dd p a:hover {
+  color: #fff;
+}
+
+.container .footer .middle .ft-ft dl dd p .map {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-ft dl dd p .map:hover {
+  color: #ff9d00;
+}
+
+.container .footer .middle .ft-ft ul {
+  display: flex;
+}
+
+.container .footer .middle .ft-ft ul li {
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.container .footer .middle .ft-ft ul li:nth-of-type(3) {
+  margin-right: 10px;
+}
+
+.container .footer .middle .ft-ft ul .chengx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -70px;
+}
+
+.container .footer .middle .ft-ft ul .kex {
+  background: url(../images/mfw-footer-sprite5.png) 0 -110px;
+}
+
+.container .footer .middle .ft-ft ul .wangx {
+  background: url(../images/mfw-footer-sprite5.png) 0 -150px;
 }
