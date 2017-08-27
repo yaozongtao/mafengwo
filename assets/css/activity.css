@@ -11,6 +11,7 @@ a {
 
 .container {
   width: 100%;
+  height: 6000px;
   margin: 0 auto;
   /*=========头部导航start=======*/
   /*=========头部导航end=========*/
@@ -307,18 +308,26 @@ a {
   position: absolute;
   top: 50px;
   right: 0;
-  width: 290px;
+  width: 350px;
   height: 50px;
-  background-color: green;
 }
 
 .container .sale-head .top-bar .top-share span {
-  width: 60px;
-  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
 }
 
 .container .sale-head .top-bar .top-share i {
   display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
   width: 30px;
   height: 30px;
 }
@@ -329,6 +338,11 @@ a {
 
 .container .sale-head .top-bar .top-share .xinlang {
   background: url(../images/share.png) 0 -30px;
+}
+
+.container .sale-head .top-bar .top-share img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .container .sale-head .lingquan {
@@ -1534,4 +1548,83 @@ a {
 
 .container .footer .middle .ft-ft ul .wangx {
   background: url(../images/mfw-footer-sprite5.png) 0 -150px;
+}
+
+.container .side-bar {
+  width: 104px;
+  height: 542px;
+  border-color: #f8db10;
+  box-shadow: #009a8d 0px 10px 0px 0px;
+  border: 3px solid #f7d935;
+  border-radius: 52px;
+  background-color: #007e74;
+}
+
+.container .side-bar .fix-top {
+  position: relative;
+  padding: 58px 7px 16px;
+  width: 90px;
+  height: 228px;
+  background-color: green;
+}
+
+.container .side-bar .fix-top > img {
+  position: absolute;
+  top: -50px;
+  left: -30px;
+}
+
+.container .side-bar .fix-top a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #005851;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .side-bar .fix-top a:hover {
+  color: #111;
+  background: url(../images/affix-hover.jpg) no-repeat;
+}
+
+.container .side-bar .fix-bot {
+  position: relative;
+  padding: 22px 7px 28px;
+  width: 90px;
+  height: 190px;
+  border-top: 3px solid #f7d935;
+}
+
+.container .side-bar .fix-bot a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #005851;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+}
+
+.container .side-bar .fix-bot .fix-tit {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
+  color: #fff;
+  background-color: #007e74;
 }
